@@ -3438,8 +3438,8 @@ maInput.addEventListener('keydown',function(e){
 .da-svg path.active{opacity:1;stroke-width:2.5;filter:drop-shadow(0 0 4px currentColor)}
 .da-node{position:absolute;background:#fff;border:1.5px solid #e5e7eb;border-radius:10px;padding:8px 11px;font-size:0.74rem;font-weight:600;color:#111827;cursor:pointer;transform:translate(-50%,-50%);transition:all 0.18s;box-shadow:0 2px 8px rgba(0,0,0,0.05);text-align:center;min-width:84px;user-select:none}
 .da-node:hover,.da-node.active{border-color:#174435;background:#f0fdf4;transform:translate(-50%,-50%) scale(1.06);box-shadow:0 4px 14px rgba(23,68,53,0.18);z-index:5}
-.da-node.da-hub{background:linear-gradient(135deg,#174435,#1f5a44);color:#fff;border-color:#174435;font-size:0.82rem;padding:14px 18px;min-width:120px}
-.da-node.da-hub:hover{background:linear-gradient(135deg,#1f5a44,#266b53);transform:translate(-50%,-50%) scale(1.04)}
+.da-node.da-hub{background:linear-gradient(135deg,#00A1E0,#1798C1);color:#fff;border-color:#00A1E0;font-size:0.82rem;padding:14px 18px;min-width:120px}
+.da-node.da-hub:hover{background:linear-gradient(135deg,#1798C1,#0078A8);transform:translate(-50%,-50%) scale(1.04)}
 .da-node-tag{display:block;font-size:0.58rem;font-weight:500;opacity:0.75;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px}
 .da-sidebar{background:#fafafa;border:1px solid #e5e7eb;border-radius:10px;padding:14px;display:flex;flex-direction:column;min-width:0}
 .da-side-empty{font-size:0.78rem;color:#9ca3af;text-align:center;margin:auto 0;font-style:italic}
@@ -3461,12 +3461,12 @@ maInput.addEventListener('keydown',function(e){
 /* ── TECH ROADMAP ── */
 .tr-shell{padding:22px;background:linear-gradient(135deg,rgba(255,255,255,0.78) 0%,rgba(255,255,255,0.55) 50%,rgba(255,255,255,0.72) 100%);backdrop-filter:blur(28px) saturate(140%);-webkit-backdrop-filter:blur(28px) saturate(140%);color:#0a1f33;min-height:560px;border-radius:16px;border:1px solid rgba(0,0,0,0.08);box-shadow:0 16px 48px rgba(0,0,0,0.10),inset 0 1px 0 rgba(255,255,255,0.85)}
 .tr-intro{margin-bottom:18px;display:flex;justify-content:space-between;align-items:flex-end;gap:14px;flex-wrap:wrap}
-.tr-intro h3{font-size:1.05rem;font-weight:700;color:#fff;margin:0 0 4px}
-.tr-intro p{font-size:0.82rem;color:rgba(231,240,235,0.75);margin:0;max-width:640px}
+.tr-intro h3{font-size:1.05rem;font-weight:700;color:#0a1f33;margin:0 0 4px}
+.tr-intro p{font-size:0.82rem;color:rgba(10,31,51,0.75);margin:0;max-width:640px}
 .tr-controls{display:flex;gap:6px;flex-wrap:wrap}
-.tr-filter{font-family:'Source Sans 3',sans-serif;font-size:0.66rem;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.15);color:#e7f0eb;padding:5px 10px;border-radius:14px;cursor:pointer;transition:all 0.15s}
-.tr-filter:hover{background:rgba(255,255,255,0.12)}
-.tr-filter.active{background:#65906B;border-color:#65906B;color:#fff}
+.tr-filter{font-family:'Source Sans 3',sans-serif;font-size:0.66rem;background:rgba(0,0,0,0.04);border:1px solid rgba(0,0,0,0.12);color:#0a1f33;padding:5px 10px;border-radius:14px;cursor:pointer;transition:all 0.15s}
+.tr-filter:hover{background:rgba(0,0,0,0.08);border-color:rgba(0,0,0,0.20)}
+.tr-filter.active{background:#1f2024;border-color:#1f2024;color:#fff}
 
 .tr-board{background:rgba(0,0,0,0.18);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px;overflow:hidden}
 .tr-axis{display:grid;grid-template-columns:170px 1fr;border-bottom:1px solid rgba(10,31,51,0.18);padding-bottom:8px;margin-bottom:10px;font-family:'Source Sans 3',sans-serif;font-size:0.62rem;color:rgba(10,31,51,0.65);text-transform:uppercase;letter-spacing:1px}
@@ -3785,8 +3785,9 @@ maInput.addEventListener('keydown',function(e){
   // ─────────────────────────────────────────
   const DA_NODES=[
     {id:'sf',name:'CRM Platform',cat:'CRM Hub',hub:true,x:50,y:50,desc:'Unified client data layer and central CRM. Every major system connects to CRM Platform as the source of truth for households, contacts, accounts, opportunities, and cases.',
-      flows:[{f:'Custodian → CRM',m:'MCP · intraday 4×',cls:'da-mcp'},{f:'Portfolio Mgmt ↔ CRM',m:'MCP · nightly two-way',cls:'da-two-way'},{f:'Document Storage ↔ CRM',m:'Native · real-time',cls:'da-two-way'},{f:'Comms Intelligence → CRM',m:'Webhook · near real-time',cls:''},{f:'Productivity Suite ↔ CRM',m:'Native · two-way',cls:'da-two-way'},{f:'CRM → Expense Mgmt',m:'One-way · daily',cls:''},{f:'Modeling Platform → CRM',m:'Manual CSV',cls:'da-manual'}]},
-    {id:'pershing',name:'Custodian',cat:'Custodian',x:18,y:14,desc:'Primary custodian. Live account data, balances, holdings, transactions, RMDs, beneficiaries. Cert-auth APIs into custom MCP server.',flows:[{f:'Custodian → CRM',m:'Intraday 4×',cls:'da-mcp'},{f:'Custodian → Portfolio Mgmt',m:'Daily feed',cls:''},{f:'Custodian → Database',m:'Nightly + intraday',cls:'da-mcp'}]},
+      flows:[{f:'Custodian A → CRM',m:'MCP · intraday 4×',cls:'da-mcp'},{f:'Custodian B → CRM',m:'MCP · daily (in conversion)',cls:'da-mcp'},{f:'Portfolio Mgmt ↔ CRM',m:'MCP · nightly two-way',cls:'da-two-way'},{f:'Document Storage ↔ CRM',m:'Native · real-time',cls:'da-two-way'},{f:'Comms Intelligence → CRM',m:'Webhook · near real-time',cls:''},{f:'Productivity Suite ↔ CRM',m:'Native · two-way',cls:'da-two-way'},{f:'CRM → Expense Mgmt',m:'One-way · daily',cls:''},{f:'Modeling Platform → CRM',m:'Manual CSV',cls:'da-manual'}]},
+    {id:'pershing',name:'Custodian A',cat:'Custodian',x:14,y:10,desc:'Legacy custodian. Live account data, balances, holdings, transactions, RMDs, beneficiaries. Cert-auth APIs into custom MCP server. Migrating to new custodian.',flows:[{f:'Custodian A → CRM',m:'Intraday 4×',cls:'da-mcp'},{f:'Custodian A → Portfolio Mgmt',m:'Daily feed',cls:''},{f:'Custodian A → Database',m:'Nightly + intraday',cls:'da-mcp'}]},
+    {id:'fidelity',name:'Custodian B',cat:'Custodian',x:30,y:6,desc:'Incoming primary custodian. Cert-auth API + custom file-transfer ingestion server (cloud VPS file watcher, 14 relational tables, 18 daily jobs). Active conversion from legacy custodian.',flows:[{f:'Custodian B → CRM',m:'File transfer + cert API · daily',cls:'da-mcp'},{f:'Custodian B → Portfolio Mgmt',m:'Daily feed',cls:''},{f:'Custodian B → Database',m:'Daily ingestion (18 jobs)',cls:'da-mcp'}]},
     {id:'addepar',name:'Portfolio Mgmt',cat:'Portfolio Mgmt',x:50,y:14,desc:'Portfolio aggregator. Positions, transactions, Assets, tax lots, entity hierarchies. Two-way CRM sync for performance and account hierarchy.',flows:[{f:'Portfolio Mgmt ↔ CRM',m:'Nightly',cls:'da-two-way'},{f:'Portfolio Mgmt → Planning Platform',m:'One-way · planning',cls:''},{f:'Portfolio Mgmt → Modeling Platform',m:'Feed',cls:''},{f:'Portfolio Mgmt → Database',m:'Nightly 2-4 AM',cls:'da-mcp'}]},
     {id:'arch',name:'Private Capital',cat:'Private Capital',x:82,y:14,desc:'Private capital aggregator. Capital calls, K1s, private holdings. Custom integration with CRM Platform for cash flows.',flows:[{f:'Private Capital ↔ CRM',m:'Daily',cls:'da-two-way'},{f:'Private Capital → Portfolio Mgmt',m:'One-way feed',cls:''},{f:'Private Capital → Database',m:'Daily 4 AM',cls:'da-mcp'}]},
     {id:'box',name:'Document Storage',cat:'Document Storage',x:14,y:42,desc:'Document storage backbone. Two-way CRM sync for household docs. Powers client portal, document vault, and onboarding doc collection.',flows:[{f:'Document Storage ↔ CRM',m:'Real-time',cls:'da-two-way'},{f:'Document Storage → clients.companyhost',m:'One-way',cls:''},{f:'Document Storage → documents.companyhost',m:'One-way',cls:''}]},
@@ -3803,7 +3804,7 @@ maInput.addEventListener('keydown',function(e){
     ['sf','concur',''],['rippling','sf',''],['ai','sf','da-mcp'],
     ['ai','pershing','da-mcp'],['ai','addepar','da-mcp'],['ai','arch','da-mcp'],
     ['ai','box','da-mcp'],['ai','rippling','da-mcp'],['qb','sf','da-manual'],
-    ['pershing','addepar',''],['arch','addepar',''],
+    ['pershing','addepar',''],['arch','addepar',''],['sf','fidelity','da-mcp'],['ai','fidelity','da-mcp'],['fidelity','addepar',''],
   ];
   let daInited=false;
   function initDataArch(){
