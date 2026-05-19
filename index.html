@@ -39,7 +39,7 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
   mask-image:radial-gradient(ellipse 80% 70% at 50% 50%,black 10%,transparent 70%);
 }
 .hero-content{position:relative;z-index:1;max-width:1100px}
-/* Hero pullquote — sits in the grid's right column, vertically centered next to the name */
+/* Hero pullquote: sits in the grid's right column, vertically centered next to the name */
 .hero-aside{position:relative;z-index:1;width:100%;justify-self:stretch;opacity:0;animation:fadeUp 0.9s 0.7s forwards}
 .hero-quote{position:relative;padding:64px 0 28px 0;border-top:3px solid var(--accent-light)}
 .hero-quote::before{content:'\201C';position:absolute;top:6px;left:0;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:6rem;line-height:0.7;color:var(--accent-light);opacity:0.55;pointer-events:none}
@@ -573,7 +573,7 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
 <section class="section obs skills-section" id="skills">
   <div class="section-num">02.5 / SKILLS</div>
   <div class="section-title">Capabilities</div>
-  <div class="section-desc">A working inventory of what I actually use day-to-day. Pulled from production work, not a bullet list. Pills marked with a qualifier indicate depth honestly &mdash; some I am expert at, some I have solid working knowledge of.</div>
+  <div class="section-desc">A working inventory of what I actually use day-to-day. Pulled from production work, not a bullet list. Pills marked with a qualifier indicate depth honestly. Some I am expert at, some I have solid working knowledge of.</div>
 
   <div class="skills-grid">
 
@@ -603,7 +603,7 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
       </div>
       <div class="skill-pills">
         <span class="skill-pill skill-pill--accent">Agentic system design</span>
-        <span class="skill-pill skill-pill--accent">MCP Servers (custom &mdash; Salesforce, Pershing, Addepar, Arch, Rippling, Box, Gong, Knowledge Base)</span>
+        <span class="skill-pill skill-pill--accent">MCP Servers (custom: Salesforce, Pershing, Addepar, Arch, Rippling, Box, Gong, Knowledge Base)</span>
         <span class="skill-pill">Multi-tier RAG</span>
         <span class="skill-pill">Vector embeddings (bge-m3, Qwen3-Embedding-8B)</span>
         <span class="skill-pill">Voice profiles ("Sound Like Me")</span>
@@ -762,7 +762,7 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
 
     <div class="skill-cat">
       <div class="skill-cat__head">
-        <div class="skill-cat__title">Domain Expertise &mdash; Wealth Management</div>
+        <div class="skill-cat__title">Domain Expertise. Wealth Management</div>
         <div class="skill-cat__count">15</div>
       </div>
       <div class="skill-pills">
@@ -850,13 +850,13 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
 <div class="divider"><hr></div>
 
 <style id="panorama-styles">
-/* Blue scale palette — single hue light → dark */
+/* Blue scale palette: single hue light to dark */
 .pano-section{padding-top:18px;--pn-l1:#EFF4FB;--pn-l2:#D9E5F6;--pn-l3:#B3CAEC;--pn-l4:#7FA1DB;--pn-l5:#3B5EC9;--pn-l6:#28489E;--pn-ink:#1B2C5A}
 .pano-summary{background:var(--pn-l1);border:1px solid var(--pn-l2);border-radius:14px;padding:24px 28px;margin:0 0 24px;box-shadow:0 1px 0 rgba(255,255,255,0.6) inset}
 .pano-summary h3{font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;font-weight:700;color:var(--pn-ink);margin:0 0 10px;letter-spacing:-0.01em}
 .pano-summary p{font-size:0.94rem;color:#33446b;line-height:1.7;margin:0}
 
-/* Architecture diagram — light, airy */
+/* Architecture diagram: light, airy */
 .pano-diagram{background:#FAFCFF;border:1px solid var(--pn-l2);border-radius:16px;padding:28px 22px;position:relative;overflow:hidden}
 .pano-diagram::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(59,94,201,0.06) 1px,transparent 1px);background-size:22px 22px;pointer-events:none}
 .pano-tier{position:relative;z-index:1;margin-bottom:14px}
@@ -864,23 +864,23 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
 .pano-tier-label{font-family:'Source Sans 3',sans-serif;font-size:0.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--pn-l5);margin-bottom:10px;text-align:center;font-weight:700}
 .pano-nodes{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
 
-/* Pills — outer tiers use lighter blues, hover shifts darker */
+/* Pills: outer tiers use lighter blues, hover shifts darker */
 .pn{background:var(--pn-l2);border:1px solid var(--pn-l3);border-radius:8px;padding:9px 13px;font-size:0.78rem;color:var(--pn-ink);font-weight:500;transition:background 0.18s,transform 0.18s,border-color 0.18s,color 0.18s}
 .pn:hover{background:var(--pn-l4);border-color:var(--pn-l5);color:#fff;transform:translateY(-2px)}
 
-/* Specialist agents — darker tier (L4 base) to suggest deeper specialization */
+/* Specialist agents: darker tier (L4 base) to suggest deeper specialization */
 .pano-tier--agents .pn{background:var(--pn-l3);border-color:var(--pn-l4)}
 .pano-tier--agents .pn:hover{background:var(--pn-l5);border-color:var(--pn-l6);color:#fff}
 
 .pano-arrow{text-align:center;color:var(--pn-l4);font-size:1.05rem;line-height:1;margin:8px 0;letter-spacing:8px}
 
-/* Warehouse — L3 hue, soft */
+/* Warehouse: L3 hue, soft */
 .pano-warehouse{background:var(--pn-l1);border:1px solid var(--pn-l3);border-radius:10px;padding:16px 20px;text-align:center}
 .pano-warehouse .pano-tier-label{color:var(--pn-l5);margin-bottom:6px}
 .pw-text{font-family:'Playfair Display',Georgia,serif;font-size:1.15rem;font-weight:600;color:var(--pn-ink)}
 .pw-sub{font-size:0.78rem;color:#5b6e95;margin-top:4px}
 
-/* Panorama core — the strongest blue (L5/L6), the focal point */
+/* Panorama core: the strongest blue (L5/L6), the focal point */
 .pano-core{background:linear-gradient(135deg,var(--pn-l5),var(--pn-l6));border-radius:10px;padding:18px 20px;text-align:center;border:1px solid var(--pn-l6);box-shadow:0 8px 24px rgba(40,72,158,0.20)}
 .pano-core .pano-tier-label{color:rgba(255,255,255,0.75);margin-bottom:8px}
 .pano-core-content{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
@@ -1081,7 +1081,7 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
 <section class="section obs innov-section" id="innovation">
   <div class="section-num">06.1 / INNOVATION STACK</div>
   <div class="section-title">Exploration &amp; R&amp;D</div>
-  <div class="section-desc">The tools and platforms I am actively exploring or running pilots against &mdash; cloud AI services, on-prem inference, sandboxed dev environments, and modern ML tooling. Things that have not yet earned a place in production but are on the runway.</div>
+  <div class="section-desc">The tools and platforms I am actively exploring or running pilots against. Cloud AI services, on-prem inference, sandboxed dev environments, and modern ML tooling. Things that have not yet earned a place in production but are on the runway.</div>
   <div class="innov-frame">
     <p class="innov-lede">Used for proofs-of-concept, evaluation rigs, agent prototypes, and side-by-side benchmarks before anything is promoted into the production stack.</p>
     <div class="innov-grid tech-grid">
@@ -1146,8 +1146,8 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
 
 <section class="section obs tdoc-section" id="tax-document-automation">
   <div class="section-num">06.6 / TAX DOCUMENT AUTOMATION</div>
-  <div class="section-title">From Custodian to Client &mdash; Hands Off</div>
-  <div class="section-desc">Custodian-issued tax documents (1099s, K-1s, monthly statements) ingested via cert-auth APIs and file transfer, classified, filed into client-specific document storage folders, and surfaced in a custom client portal — with notifications, audit trail, and zero manual handoff.</div>
+  <div class="section-title">From Custodian to Client. Hands Off</div>
+  <div class="section-desc">Custodian-issued tax documents (1099s, K-1s, monthly statements) ingested via cert-auth APIs and file transfer, classified, filed into client-specific document storage folders, and surfaced in a custom client portal, with notifications, audit trail, and zero manual handoff.</div>
   <div class="tdoc-frame">
     <div class="tdoc-pipeline">
   <div class="tdoc-stage">
@@ -1201,7 +1201,7 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
       <div>
         <div class="tdoc-agent__label">Built-in AI Agent</div>
         <div class="tdoc-agent__title">Talk to the system. It answers, and it acts.</div>
-        <div class="tdoc-agent__desc">An agent sits on top of the entire pipeline. Ops can ask it questions about live state, and tell it to take action &mdash; resend, push, alert, escalate &mdash; without leaving the chat. Conversational interface for the people who live in this system every January.</div>
+        <div class="tdoc-agent__desc">An agent sits on top of the entire pipeline. Ops can ask it questions about live state, and tell it to take action like resend, push, alert, escalate, without leaving the chat. Conversational interface for the people who live in this system every January.</div>
         <div class="tdoc-agent__examples">
           <span class="tdoc-agent__chat">&ldquo;Is Marcus&apos;s K-1 available?&rdquo;</span>
           <span class="tdoc-agent__chat">&ldquo;Send me a link to Marcus&apos;s 1099s so I can check on them.&rdquo;</span>
@@ -1216,12 +1216,12 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
 
 <section class="section obs pano-section" id="ai-architect">
   <div class="section-num">06.8 / AI ARCHITECT</div>
-  <div class="section-title">Panorama &mdash; Agentic Intelligence Architecture</div>
-  <div class="section-desc">A complete agentic AI architecture I designed end-to-end &mdash; the kind of org-wide intelligence platform a firm builds once and runs forever. Originally scoped for a 415-person multi-office RIA, but the architecture itself is portable: it works for any organization whose email and CRM expose APIs, regardless of which specific vendors they use.</div>
+  <div class="section-title">Panorama. Agentic Intelligence Architecture</div>
+  <div class="section-desc">A complete agentic AI architecture I designed end-to-end. The kind of org-wide intelligence platform a firm builds once and runs forever. Originally scoped for a 415-person multi-office RIA, but the architecture itself is portable: it works for any organization whose email and CRM expose APIs, regardless of which specific vendors they use.</div>
 
   <div class="pano-summary">
     <h3>Panorama, in one paragraph.</h3>
-    <p>Panorama pulls every system in the firm &mdash; CRM, custodians, portfolio management, email, documents, HR, communications &mdash; into a single nightly-synced warehouse, then deploys a hierarchy of specialist agents on top of it. It does not start with infrastructure. It starts with a department-by-department recon to map how work actually flows. From there, a Simulation Think Tank models the org and replaces its assumptions with real data as the warehouse fills in. Specialist agents handle ops, compliance, client service, business development, strategy, training, and security &mdash; all querying the warehouse, never production. The recon phase becomes a continuous loop. The system gets sharper every week.</p>
+    <p>Panorama pulls every system in the firm (CRM, custodians, portfolio management, email, documents, HR, communications) into a single nightly-synced warehouse, then deploys a hierarchy of specialist agents on top of it. It does not start with infrastructure. It starts with a department-by-department recon to map how work actually flows. From there, a Simulation Think Tank models the org and replaces its assumptions with real data as the warehouse fills in. Specialist agents handle ops, compliance, client service, business development, strategy, training, and security, all querying the warehouse, never production. The recon phase becomes a continuous loop. The system gets sharper every week.</p>
   </div>
 
   <div class="pano-diagram">
@@ -1289,7 +1289,7 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
     <div class="pp-card">
       <div class="pp-num">01</div>
       <div class="pp-title">Recon First, Build Second</div>
-      <div class="pp-desc">Sit with each department. Understand how they actually work. Surface quick wins before writing a line of agent code. Recon never ends &mdash; it becomes the loop that keeps Panorama relevant.</div>
+      <div class="pp-desc">Sit with each department. Understand how they actually work. Surface quick wins before writing a line of agent code. Recon never ends. It becomes the loop that keeps Panorama relevant.</div>
     </div>
     <div class="pp-card">
       <div class="pp-num">02</div>
@@ -1335,7 +1335,7 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
           <div class="pe-step__num">02</div>
           <div class="pe-step__body">
             <div class="pe-step__title">Carol&apos;s agent reads it before she does.</div>
-            <div class="pe-step__desc">It recognizes the request, identifies the account, and starts searching in the background &mdash; across email, document storage, the CRM, and the data warehouse. All within Carol&apos;s ACL scope.</div>
+            <div class="pe-step__desc">It recognizes the request, identifies the account, and starts searching in the background, across email, document storage, the CRM, and the data warehouse. All within Carol&apos;s ACL scope.</div>
           </div>
         </div>
         <div class="pe-step">
@@ -1353,13 +1353,13 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
           </div>
         </div>
       </div>
-      <div class="pano-example__caption">From email-arrival to reply-sent: a few minutes, mostly just Carol reading and approving. The retrieval, the assembly, the drafting &mdash; already happening before she would normally even see the request.</div>
+      <div class="pano-example__caption">From email-arrival to reply-sent: a few minutes, mostly just Carol reading and approving. The retrieval, the assembly, the drafting, already happening before she would normally even see the request.</div>
     </div>
   </div>
 
   <div class="pano-hierarchy">
-    <h3 class="pano-h3">Up the Stack &mdash; Agents Talking to Agents</h3>
-    <p class="pano-intro">Personal agents do not just serve their humans. They roll up. A team manager does not have to ask twelve people how their week is going &mdash; their agent already pulled it from the team&apos;s agents and prepared a summary. Same pattern up to department, then up to executive.</p>
+    <h3 class="pano-h3">Up the Stack. Agents Talking to Agents</h3>
+    <p class="pano-intro">Personal agents do not just serve their humans. They roll up. A team manager does not have to ask twelve people how their week is going. Their agent already pulled it from the team&apos;s agents and prepared a summary. Same pattern up to department, then up to executive.</p>
     <div class="pano-pyramid">
       <div class="pano-pyramid__row">
         <div class="pp-row__label">Executive</div>
@@ -1379,7 +1379,7 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
           <div class="pp-pill pp-pill--dept">Compliance</div>
           <div class="pp-pill pp-pill--dept">Advisory</div>
         </div>
-        <div class="pp-row__what">Department-level rollups. Bigger issues only &mdash; broken processes, capacity problems, priority shifts. Routine noise stays at the team level.</div>
+        <div class="pp-row__what">Department-level rollups. Bigger issues only. Broken processes, capacity problems, priority shifts. Routine noise stays at the team level.</div>
       </div>
       <div class="pano-pyramid__arrow">&#8593;</div>
       <div class="pano-pyramid__row">
@@ -1401,15 +1401,15 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
           <div class="pp-pill pp-pill--member">Priya</div>
           <div class="pp-pill pp-pill--member">+ everyone else</div>
         </div>
-        <div class="pp-row__what">One agent per person. Primed with their role, their email, their docs, their workflow. The Carol scenario above &mdash; multiplied across the firm.</div>
+        <div class="pp-row__what">One agent per person. Primed with their role, their email, their docs, their workflow. The Carol scenario above, multiplied across the firm.</div>
       </div>
     </div>
-    <div class="pano-process-note">Agents are programmed with the firm&apos;s actual processes &mdash; communication flows, escalation paths, the natural ebbs and flows of the organization. They do not just summarize; they understand who needs to know what, when, and how it should be framed.</div>
+    <div class="pano-process-note">Agents are programmed with the firm&apos;s actual processes. Communication flows, escalation paths, the natural ebbs and flows of the organization. They do not just summarize; they understand who needs to know what, when, and how it should be framed.</div>
   </div>
 
   <div class="pano-portability">
     <h4>Not exclusive to any one stack.</h4>
-    <p>Panorama was scoped against a specific firm&apos;s stack &mdash; <strong>Salesforce FSC, Orion, Eclipse, eMoney, Schwab, Fidelity, LPL, Microsoft 365, SharePoint, Workday</strong> &mdash; but the architecture is not. Anywhere there is an email system with an API (Microsoft Graph, Google Workspace) and a CRM with an API (Salesforce, Microsoft Dynamics, HubSpot, custom), Panorama can plug in. The warehouse, the agent hierarchy, the recon loop, the think tank &mdash; all reusable. The vendor list is what changes; the design does not.</p>
+    <p>Panorama was scoped against a specific firm&apos;s stack: <strong>Salesforce FSC, Orion, Eclipse, eMoney, Schwab, Fidelity, LPL, Microsoft 365, SharePoint, Workday</strong>. But the architecture is not. Anywhere there is an email system with an API (Microsoft Graph, Google Workspace) and a CRM with an API (Salesforce, Microsoft Dynamics, HubSpot, custom), Panorama can plug in. The warehouse, the agent hierarchy, the recon loop, the think tank, all reusable. The vendor list is what changes; the design does not.</p>
   </div>
 </section>
 <div class="divider"><hr></div>
@@ -1495,7 +1495,7 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
           </div>`;
         trpRows.appendChild(row);
       });
-      // Define the global click handler (idempotent — same fn used by both preview & modal)
+      // Define the global click handler (idempotent: same fn used by both preview & modal)
       window.__showTrMilestone=window.__showTrMilestone||function(btn,detailId){
         const data=window.__SHOWCASE_DATA__;if(!data)return;
         const epic=data.TR_EPICS.find(e=>e.id===btn.dataset.epic);
@@ -1570,7 +1570,7 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
 <section class="section obs gov-section" id="ai-governance">
   <div class="section-num">06.9 / AI GOVERNANCE</div>
   <div class="section-title">AI Governance Framework</div>
-  <div class="section-desc">Financial services / RIA &mdash; structured across four governance layers. The framework that lets AI scale at the firm without compromising compliance, fiduciary duty, or client trust.</div>
+  <div class="section-desc">Financial services / RIA, structured across four governance layers. The framework that lets AI scale at the firm without compromising compliance, fiduciary duty, or client trust.</div>
 
   <div class="gov-layers">
 
@@ -1669,7 +1669,7 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
         <div class="gov-item">
           <div class="gov-item__pill">Human-in-loop</div>
           <div class="gov-item__title">Supervised autonomy</div>
-          <div class="gov-item__desc">Agentic workflows require human approval for actions above defined thresholds &mdash; trades, data writes, client communications. Full override capability at all times.</div>
+          <div class="gov-item__desc">Agentic workflows require human approval for actions above defined thresholds: trades, data writes, client communications. Full override capability at all times.</div>
         </div>
       </div>
     </div>
@@ -1680,12 +1680,12 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
     <h3>Regulatory alignment</h3>
     <div class="gov-h-sub">The frameworks and rules this governance maps to.</div>
     <div class="gov-reg-list">
-      <div class="gov-reg"><span class="gov-reg__name">SEC Marketing Rule</span> &mdash; AI-generated performance claims, testimonials, and back-tested data require the same disclosures as manual equivalents.</div>
-      <div class="gov-reg"><span class="gov-reg__name">Reg BI / Fiduciary</span> &mdash; AI cannot replace human best-interest analysis; must document how AI-assisted recommendations remain compliant.</div>
-      <div class="gov-reg"><span class="gov-reg__name">NIST AI RMF</span> &mdash; Govern &rarr; Map &rarr; Measure &rarr; Manage cycle is the operational backbone for internal controls.</div>
-      <div class="gov-reg"><span class="gov-reg__name">EU AI Act</span> &mdash; If serving EU-domiciled clients, high-risk classification likely applies to client-advisory AI use cases.</div>
-      <div class="gov-reg"><span class="gov-reg__name">GLBA / privacy</span> &mdash; AI training and inference pipelines must comply with Safeguards Rule; no client NPI fed to public models without consent.</div>
-      <div class="gov-reg"><span class="gov-reg__name">FINRA (if applicable)</span> &mdash; Supervisory procedures must cover AI tools used in communication, suitability, and trade surveillance.</div>
+      <div class="gov-reg"><span class="gov-reg__name">SEC Marketing Rule</span>. AI-generated performance claims, testimonials, and back-tested data require the same disclosures as manual equivalents.</div>
+      <div class="gov-reg"><span class="gov-reg__name">Reg BI / Fiduciary</span>. AI cannot replace human best-interest analysis; must document how AI-assisted recommendations remain compliant.</div>
+      <div class="gov-reg"><span class="gov-reg__name">NIST AI RMF</span>. Govern &rarr; Map &rarr; Measure &rarr; Manage cycle is the operational backbone for internal controls.</div>
+      <div class="gov-reg"><span class="gov-reg__name">EU AI Act</span>. If serving EU-domiciled clients, high-risk classification likely applies to client-advisory AI use cases.</div>
+      <div class="gov-reg"><span class="gov-reg__name">GLBA / privacy</span>. AI training and inference pipelines must comply with Safeguards Rule; no client NPI fed to public models without consent.</div>
+      <div class="gov-reg"><span class="gov-reg__name">FINRA (if applicable)</span>. Supervisory procedures must cover AI tools used in communication, suitability, and trade surveillance.</div>
     </div>
   </div>
 
@@ -1748,7 +1748,7 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
     </div>
     <div class="impact-total-val">~$7M</div>
   </div>
-  <div class="impact-note">Hard savings are actual dollars removed from the budget. Development and productivity figures are conservative estimates. development priced at agency rates for equivalent scope, productivity modeled at 10% (well below typical automation/AI impact benchmarks of 15–30%).</div>
+  <div class="impact-note">Hard savings are actual dollars removed from the budget. Development and productivity figures are conservative estimates. development priced at agency rates for equivalent scope, productivity modeled at 10% (well below typical automation/AI impact benchmarks of 15-30%).</div>
 </section>
 <div class="divider"><hr></div>
 
@@ -1781,14 +1781,14 @@ body{font-family:'Source Sans 3','Source Sans Pro',-apple-system,sans-serif;back
         <div class="edu-degree">Master of Science, Management Information Systems</div>
         <div class="edu-school">Kennesaw State University</div>
       </div>
-      <div class="edu-dates">2013 &mdash; 2015</div>
+      <div class="edu-dates">2013 - 2015</div>
     </div>
     <div class="edu-card">
       <div>
         <div class="edu-degree">Bachelor of Science, Health Science</div>
         <div class="edu-school">Kennesaw State University</div>
       </div>
-      <div class="edu-dates">2005 &mdash; 2009</div>
+      <div class="edu-dates">2005 - 2009</div>
     </div>
   </div>
 </section>
@@ -1814,7 +1814,7 @@ const ROLES=[
     items:['Office 365 / Microsoft 365 administration','Azure and Entra ID architecture','Meraki network infrastructure','NinjaOne endpoint management','Duo MFA across all systems','Rippling (onboarding, payroll, benefits, devices)','Leading a major vendor-platform migration with custom SFTP ingestion','SFTP ingestion server on DigitalOcean (file watcher, 14 PostgreSQL tables, 18 daily jobs)','Built a new office location IT from scratch (MDF, networking, AV, endpoints)','Helpdesk, escalation, and vendor coordination']},
   {icon:'💻',title:'Software Development',color:'var(--green-soft)',
     desc:'Designed, built, and deployed 10+ production web applications. Own the full stack from database to deployment. 15 domains on a single server.',
-    items:['React / Express.js / PostgreSQL full-stack development','15 production domains with SSL, nginx, PM2','REST API design. 120+ routes, 50+ integrations','Database design and query optimization (50+ PostgreSQL tables)','Salesforce Lightning (LWC, Apex, Flows). 65 LWC, 98 Flows, 21 triggers','Owned Tableau and Salesforce CRM Analytics. Built executive dashboards across AUM, pipeline, ops KPIs, and adoption metrics — embedded directly into Salesforce for daily use','Keycloak SAML IdP federated with Rippling','UI/UX design and frontend engineering','CI/CD and deployment scripting','Real-time features (Socket.IO, webhooks)']},
+    items:['React / Express.js / PostgreSQL full-stack development','15 production domains with SSL, nginx, PM2','REST API design. 120+ routes, 50+ integrations','Database design and query optimization (50+ PostgreSQL tables)','Salesforce Lightning (LWC, Apex, Flows). 65 LWC, 98 Flows, 21 triggers','Owned Tableau and Salesforce CRM Analytics. Built executive dashboards across AUM, pipeline, ops KPIs, and adoption metrics, embedded directly into Salesforce for daily use','Keycloak SAML IdP federated with Rippling','UI/UX design and frontend engineering','CI/CD and deployment scripting','Real-time features (Socket.IO, webhooks)']},
   {icon:'🤖',title:'AI & Agentic Systems',color:'var(--purple-soft)',
     desc:'Founded the agentic AI unit. Self-hosted production agent platform with 11 MCP servers exposing 425+ tools, runtime LLM switching between local Ollama models and the Claude API, multi-tier RAG (Qdrant + PostgreSQL), and a senior reviewer-agent pattern.',
     items:['11 MCP servers exposing 425+ tools across CRM, ERP-style platforms, document storage, comms, and HRIS','Self-hosted local LLMs via Ollama: qwen3:30b (default), gpt-oss:120b, deepseek-r1:70b, llama3.2-vision, bge-m3 embeddings (~195GB on-prem)','Runtime provider switching: Ollama (default, private, no rate limits) ↔ Claude API for tool-heavy orchestration','Orchestrator + 11 specialist agents covering CRM, documents, finance/portfolio, comms, HR, marketing, compliance, and training','Senior reviewer-agent pattern: re-reads synthesized answers with domain expertise before delivery','Multi-tier RAG: Qdrant vector DB + PostgreSQL cache holding 7M+ records for sub-second answers','Learning loop: thumbs feedback embedded with bge-m3, semantically boosts the winning agent on similar future queries','Routing strategy: keyword fast-path → learned-pattern semantic match → LLM intent analysis → fallback chain','MCP Proxy for Claude Code integration','40+ scheduled jobs running nightly + intraday across every data source','Executive Coaching System: leadership recordings archived nightly, embedded, surfaced as exemplars or to critique a teammate\'s own recording','Insights App with voice profiles ("sound like me") for AI meeting intelligence','Exploratory agents that map how the org actually works from comms + CRM activity','AI document classification that auto-organizes years of unstructured files into a governed library','AI activity summarization in CRM (OpenAI + workflow orchestration)','Pre-meeting briefs, transcript archiving, email-to-CRM matching','Snowflake vs Databricks benchmarks for the centralized data orchestration backbone','Firm-wide AI education. 145% usage increase YoY (20 → 49 active users)']},
@@ -1871,11 +1871,11 @@ const PROJECTS=[
   {id:'clients',domain:'clients.balentine.com',title:'Customer Portal',stripe:'linear-gradient(90deg,var(--accent),var(--red-soft))',
     desc:'Customer-facing portal with account summaries, performance data, and document access pulling from upstream systems of record.',
     tags:['API Aggregation','Customer-Facing','Self-Service'],
-    features:[{g:'Replacing the Phone-Call-for-a-Balance',items:[{n:'The process it replaced',d:'Clients used to call their advisor or admin to get a balance, see portfolio performance, check beneficiaries, or pull a tax statement. Each call cost minutes of advisor time. Power-users could log into the portfolio-mgmt platform or the custodian client portal directly to see live account data, beneficiaries, and who their advisor and team are — but those UIs are intimidating, two separate logins, and few clients used them without help.'},{n:'One log-in, everything in one place',d:'Federated identity via the SSO provider. Clients log in once and see their accounts, holdings, performance, beneficiaries, who their advisor and full service team are, AND their documents. No more bouncing between custodian portals.'},{n:'Live data from custodian and portfolio mgmt',d:'Accounts, balances, holdings, and performance pulled live from the portfolio-mgmt and custodian platforms. No nightly batch lag — the number on the screen matches the custodian.'},{n:'Beneficiaries + service team visibility',d:'Beneficiaries on file shown clearly per account. Each household sees their named advisor, relationship manager, and operations contact with photos and direct contact info — the team they actually work with.'},{n:'Document access in the same portal',d:'Tax docs, statements, and any custodian-issued documents land in the same portal. The Documents Portal feeds in automatically — clients do not need to know it is a separate system.'},{n:'Built for the relationship, not just the data',d:'Designed alongside advisors so it shows what clients actually ask about, in the order they ask.'},{n:'Business impact',d:'Reduced inbound "what is my balance" calls dramatically. Eliminated the two-portal logins that most clients never bothered with. Advisors freed up for high-value conversations.'},{n:'Platform leverage',d:'Same data layer as the document portal, onboarding, and pre-meeting briefings. Adding new data points means surfacing them once in the shared layer and they appear here automatically.'},]},{g:'Features',items:[{n:'Account Summary',d:'Dashboard of all customer accounts'},{n:'Performance Trends',d:'Metrics and historical trends'},{n:'Document Access',d:'Self-service regulatory and statement downloads'}]}]},
+    features:[{g:'Replacing the Phone-Call-for-a-Balance',items:[{n:'The process it replaced',d:'Clients used to call their advisor or admin to get a balance, see portfolio performance, check beneficiaries, or pull a tax statement. Each call cost minutes of advisor time. Power-users could log into the portfolio-mgmt platform or the custodian client portal directly to see live account data, beneficiaries, and who their advisor and team are, but those UIs are intimidating, two separate logins, and few clients used them without help.'},{n:'One log-in, everything in one place',d:'Federated identity via the SSO provider. Clients log in once and see their accounts, holdings, performance, beneficiaries, who their advisor and full service team are, AND their documents. No more bouncing between custodian portals.'},{n:'Live data from custodian and portfolio mgmt',d:'Accounts, balances, holdings, and performance pulled live from the portfolio-mgmt and custodian platforms. No nightly batch lag, the number on the screen matches the custodian.'},{n:'Beneficiaries + service team visibility',d:'Beneficiaries on file shown clearly per account. Each household sees their named advisor, relationship manager, and operations contact with photos and direct contact info, the team they actually work with.'},{n:'Document access in the same portal',d:'Tax docs, statements, and any custodian-issued documents land in the same portal. The Documents Portal feeds in automatically, clients do not need to know it is a separate system.'},{n:'Built for the relationship, not just the data',d:'Designed alongside advisors so it shows what clients actually ask about, in the order they ask.'},{n:'Business impact',d:'Reduced inbound "what is my balance" calls dramatically. Eliminated the two-portal logins that most clients never bothered with. Advisors freed up for high-value conversations.'},{n:'Platform leverage',d:'Same data layer as the document portal, onboarding, and pre-meeting briefings. Adding new data points means surfacing them once in the shared layer and they appear here automatically.'},]},{g:'Features',items:[{n:'Account Summary',d:'Dashboard of all customer accounts'},{n:'Performance Trends',d:'Metrics and historical trends'},{n:'Document Access',d:'Self-service regulatory and statement downloads'}]}]},
   {id:'onboarding',domain:'onboarding.balentine.com',title:'Onboarding Portal',stripe:'linear-gradient(90deg,var(--purple-soft),var(--accent))',
     desc:'Multi-step customer onboarding. dynamic questionnaires, document collection, email-verified submission with handoff to downstream systems.',
     tags:['Onboarding','Forms','Verification'],
-    features:[{g:'From Paper-and-PDF to Days-Not-Weeks',items:[{n:'The process it replaced',d:'New client onboarding was a paper trail. Forms emailed. PDFs signed. Documents scanned. Manually re-entered into the CRM by ops. A typical onboarding took weeks of back-and-forth before the client relationship was officially active.'},{n:'CRM pre-populates the form',d:'What the firm already knows about the client auto-fills the questionnaire. Client only fills in what\'s actually missing.'},{n:'Dynamic, sectioned questionnaire',d:'Family, Assets, Liabilities, Income, Insurance, Goals — each as its own section with progress indicators. Saveable as you go.'},{n:'Direct document upload',d:'Driver\'s license, statements, void check uploaded straight into the document storage system, filed into the right client folder, linked to the CRM record. No print-scan-email loop.'},{n:'Email verification',d:'One-time link confirmation. Reduces fraud and impersonation risk.'},{n:'Round-trip back to CRM',d:'Completed data flows back into the right CRM objects. No re-entry.'},{n:'Business impact',d:'New client onboarding shrunk from weeks to days. Ops eliminated re-entry and reconciliation.'},{n:'Platform leverage',d:'Reuses the same document ingestion, CRM object model, and SSO that the client portal and document portal run on.'},]},{g:'Flow',items:[{n:'Dynamic Questionnaire',d:'Multi-section forms with conditional branching'},{n:'Document Collection',d:'ID, statements, supporting docs'},{n:'Progress Tracking',d:'Visual indicators across sections'}]}]},
+    features:[{g:'From Paper-and-PDF to Days-Not-Weeks',items:[{n:'The process it replaced',d:'New client onboarding was a paper trail. Forms emailed. PDFs signed. Documents scanned. Manually re-entered into the CRM by ops. A typical onboarding took weeks of back-and-forth before the client relationship was officially active.'},{n:'CRM pre-populates the form',d:'What the firm already knows about the client auto-fills the questionnaire. Client only fills in what\'s actually missing.'},{n:'Dynamic, sectioned questionnaire',d:'Family, Assets, Liabilities, Income, Insurance, Goals, each as its own section with progress indicators. Saveable as you go.'},{n:'Direct document upload',d:'Driver\'s license, statements, void check uploaded straight into the document storage system, filed into the right client folder, linked to the CRM record. No print-scan-email loop.'},{n:'Email verification',d:'One-time link confirmation. Reduces fraud and impersonation risk.'},{n:'Round-trip back to CRM',d:'Completed data flows back into the right CRM objects. No re-entry.'},{n:'Business impact',d:'New client onboarding shrunk from weeks to days. Ops eliminated re-entry and reconciliation.'},{n:'Platform leverage',d:'Reuses the same document ingestion, CRM object model, and SSO that the client portal and document portal run on.'},]},{g:'Flow',items:[{n:'Dynamic Questionnaire',d:'Multi-section forms with conditional branching'},{n:'Document Collection',d:'ID, statements, supporting docs'},{n:'Progress Tracking',d:'Visual indicators across sections'}]}]},
   {id:'valuecards',domain:'valuecards.balentine.com',title:'Value Cards',stripe:'linear-gradient(90deg,var(--green-soft),var(--accent))',
     desc:'Interactive values assessment. swipe UI, animations, group comparison, audio feedback. Used in advisory sessions and team workshops.',
     tags:['Framer Motion','Howler.js','Advisory'],
@@ -1893,9 +1893,9 @@ const PROJECTS=[
     tags:['Rippling SAML','Keycloak','MCP'],
     features:[{g:'The Long Tail of Internal Tools',items:[{n:'The pattern',d:'Each of these started as a "we need a small thing" request that would have been a vendor evaluation, a contract, and an integration project. Instead, each became a focused build on the existing internal stack.'},{n:'Compensation portal',d:'Real-time visibility into compensation, benefits, and incentives. Replaced an annual PDF summary that was outdated the moment it was generated.'},{n:'Org Chart',d:'Visual team hierarchy pulled live from the HR platform. Replaces a manually-maintained chart that nobody updated.'},{n:'Pre-Meeting Discovery Portal',d:'Public questionnaire prospects fill out before their first call. Saves the advisor 20 minutes of intake on every first meeting.'},{n:'Upload Portal',d:'Secure file upload (500 MB) for prospects and clients to send sensitive docs.'},{n:'SSO Server',d:'Federated identity provider running SSO to every internal app.'},{n:'CRM MCP server',d:'Custom MCP exposing CRM metadata coverage with read/write separation.'},{n:'Business impact',d:'A long tail of small productivity wins that add up. Each tool replaced an annual vendor cost OR an ongoing manual process.'},]},{g:'Portals',items:[{n:'Total Rewards',d:'Real-time compensation/benefits/incentive visibility'},{n:'Org Chart',d:'Team hierarchy visualization'},{n:'Pre-Meeting Portal',d:'Public client discovery questionnaire'},{n:'Upload Portal',d:'Secure file upload (500MB)'},{n:'SSO Server',d:'Keycloak SAML identity provider'},{n:'Salesforce MCP',d:'Metadata coverage. read/write separation'}]}]},
   {id:'vendorsync',domain:'Multi-Custodian Integration',title:'Custodial Integration',stripe:'linear-gradient(90deg,var(--accent),var(--blue-soft))',
-    desc:'Both custodians fully integrated into the firm\'s data layer. Legacy custodian via cert-auth APIs; new custodian via cert-auth API + custom file-transfer ingestion server (cloud-VPS file watcher, 14 relational tables, 18 daily jobs). Statements, tax docs, RMDs, standing instructions, beneficiaries, retirement accounts — all surfaced inside the CRM on the household record.',
+    desc:'Both custodians fully integrated into the firm\'s data layer. Legacy custodian via cert-auth APIs; new custodian via cert-auth API + custom file-transfer ingestion server (cloud-VPS file watcher, 14 relational tables, 18 daily jobs). Statements, tax docs, RMDs, standing instructions, beneficiaries, retirement accounts, all surfaced inside the CRM on the household record.',
     tags:['Multi-Custodian','Cert Auth','File Transfer','CRM Surface'],
-    features:[{g:'Custodian Data Without Leaving the CRM',items:[{n:'The process it replaced',d:'Looking up a single client\'s standing instructions, RMD status, or beneficiary on file used to mean logging into a custodian web UI, navigating through tabs, and digging. Two custodians, two logins, two UIs. Context switching killed velocity.'},{n:'Legacy custodian — cert-auth API ingestion',d:'Certificate-authenticated APIs feed statements, tax docs, RMDs, standing instructions, and retirement-account specifics into our own data layer. Intraday refresh — the data matches the custodian in near-real-time.'},{n:'New custodian — cert-auth API + custom file-transfer ingestion',d:'Cert-auth API for live data, plus a custom file-transfer ingestion server with a watcher process, intake schema, 14 relational tables, and 18 daily jobs. Different vendor, same CRM surface.'},{n:'Surfaced inside the CRM on the same record',d:'Custodian-integrated components on the household record show data from whichever custodian holds that account. Ops doesn\'t need to know or care which custodian — the UI is the same.'},{n:'Built for the conversion',d:'Designed so both custodians coexist for the duration of the multi-year migration. As accounts move to the new custodian, they appear in the same UI seamlessly, no retraining required.'},{n:'Business impact',d:'Ops self-serve answers about either custodian\'s data. Per-question time cost dropped from minutes to seconds. Conversion timeline accelerated because the data layer doesn\'t depend on which custodian holds the account.'},{n:'Platform leverage',d:'Same ingestion pattern, two custodians. The pattern itself is the asset — adding a third (if ever needed) is a known path, not a new project.'},]},{g:'Document Pipelines',items:[{n:'Statements',d:'Monthly financial statements from both custodians'},{n:'Tax Docs',d:'Tax forms from both custodians'},{n:'Standing Instructions',d:'Account instruction management surfaced from each custodian\'s API'},{n:'Retirement',d:'Retirement-specific API integration (RMDs, contributions, beneficiaries)'},{n:'File watcher',d:'Cloud-VPS watcher process that ingests scheduled file drops; 18 daily jobs land them into the right relational tables'}]}]},
+    features:[{g:'Custodian Data Without Leaving the CRM',items:[{n:'The process it replaced',d:'Looking up a single client\'s standing instructions, RMD status, or beneficiary on file used to mean logging into a custodian web UI, navigating through tabs, and digging. Two custodians, two logins, two UIs. Context switching killed velocity.'},{n:'Legacy custodian, cert-auth API ingestion',d:'Certificate-authenticated APIs feed statements, tax docs, RMDs, standing instructions, and retirement-account specifics into our own data layer. Intraday refresh, the data matches the custodian in near-real-time.'},{n:'New custodian, cert-auth API + custom file-transfer ingestion',d:'Cert-auth API for live data, plus a custom file-transfer ingestion server with a watcher process, intake schema, 14 relational tables, and 18 daily jobs. Different vendor, same CRM surface.'},{n:'Surfaced inside the CRM on the same record',d:'Custodian-integrated components on the household record show data from whichever custodian holds that account. Ops doesn\'t need to know or care which custodian, the UI is the same.'},{n:'Built for the conversion',d:'Designed so both custodians coexist for the duration of the multi-year migration. As accounts move to the new custodian, they appear in the same UI seamlessly, no retraining required.'},{n:'Business impact',d:'Ops self-serve answers about either custodian\'s data. Per-question time cost dropped from minutes to seconds. Conversion timeline accelerated because the data layer doesn\'t depend on which custodian holds the account.'},{n:'Platform leverage',d:'Same ingestion pattern, two custodians. The pattern itself is the asset, adding a third (if ever needed) is a known path, not a new project.'},]},{g:'Document Pipelines',items:[{n:'Statements',d:'Monthly financial statements from both custodians'},{n:'Tax Docs',d:'Tax forms from both custodians'},{n:'Standing Instructions',d:'Account instruction management surfaced from each custodian\'s API'},{n:'Retirement',d:'Retirement-specific API integration (RMDs, contributions, beneficiaries)'},{n:'File watcher',d:'Cloud-VPS watcher process that ingests scheduled file drops; 18 daily jobs land them into the right relational tables'}]}]},
   {id:'dailyemail',domain:'projects.balentine.com',title:'Daily Email Summary',stripe:'linear-gradient(90deg,var(--blue-soft),var(--green-soft))',
     desc:'Automated portfolio briefing system. scans advisor mailboxes via Microsoft Graph, matches senders to clients using Salesforce-synced contact data, generates AI summaries via GPT-4o-mini, and delivers branded HTML digest emails on a configurable schedule.',
     tags:['Microsoft Graph','OpenAI','PostgreSQL','Node-cron','Salesforce Sync'],
@@ -1910,7 +1910,7 @@ const PROJECTS=[
     desc:'AI-powered customer-to-account-manager compatibility analysis using Strength Deployment Inventory (SDI) profiles. Analyzes personality compatibility, communication styles, conflict resolution approaches, and historical interaction patterns to recommend optimal team assignments.',
     tags:['Salesforce LWC','AI','SDI','Personality Analysis'],
     features:[
-      {g:'Data-Driven RM Assignment',items:[{n:'The process it replaced',d:'New client → relationship manager assignments were largely intuition and scheduling. "Who has bandwidth and seems like a fit?" Mismatches surfaced months later as friction or attrition.'},{n:'Personality profile matching',d:'Compares client and RM personality profiles for compatibility. Pulls in communication style preferences and conflict resolution patterns.'},{n:'Historical interaction scoring',d:'Weighs past interaction quality and frequency.'},{n:'Inside the CRM',d:'Action button on the household record. Click "Analyze Compatibility" — get a ranked list of best-fit RMs with scores and reasoning.'},{n:'Business impact',d:'Better-matched relationships from day one. Reduced friction. Improved long-term retention.'},]},
+      {g:'Data-Driven RM Assignment',items:[{n:'The process it replaced',d:'New client → relationship manager assignments were largely intuition and scheduling. "Who has bandwidth and seems like a fit?" Mismatches surfaced months later as friction or attrition.'},{n:'Personality profile matching',d:'Compares client and RM personality profiles for compatibility. Pulls in communication style preferences and conflict resolution patterns.'},{n:'Historical interaction scoring',d:'Weighs past interaction quality and frequency.'},{n:'Inside the CRM',d:'Action button on the household record. Click "Analyze Compatibility", get a ranked list of best-fit RMs with scores and reasoning.'},{n:'Business impact',d:'Better-matched relationships from day one. Reduced friction. Improved long-term retention.'},]},
       {g:'Analysis Engine',items:[{n:'SDI Profile Matching',d:'Compares customer and team-member SDI results for personality compatibility'},{n:'Communication Style Analysis',d:'Evaluates communication preferences and interaction patterns'},{n:'Conflict Resolution Mapping',d:'Maps conflict approaches to identify complementary or compatible styles'},{n:'Historical Interaction Scoring',d:'Weighs past interaction quality, frequency, and outcomes in compatibility scoring'}]},
       {g:'UI Components',items:[{n:'Compatibility Dashboard',d:'Visual scoring with "Analyze SDI Compatibility" action button in Salesforce'},{n:'Team Roster View',d:'Full team view with SDI profiles and availability'},{n:'Match Recommendations',d:'Ranked list of best-fit team members with compatibility scores and reasoning'}]},
     ]},
@@ -1938,16 +1938,16 @@ const PROJECTS=[
       {g:'Visualization',items:[{n:'Horizontal Timeline',d:'Pannable, zoomable. Each epic is a row with milestone nodes plotted on a date axis'},{n:'Status Coloring',d:'Completed, in-progress, planned. Impact tier (critical/high/medium) controls node size'},{n:'Detail Drill-Down',d:'Click any milestone for description, dependencies, related project. Two-level zoom (epic → milestone)'},{n:'Mobile View',d:'Compact card stack with phase filter. Same data, finger-friendly'}]},
       {g:'Reporting',items:[{n:'Executive Snapshot',d:'One-screen view for board reporting and quarterly innovation sessions'},{n:'Cross-Department Sharing',d:'Read-only view for ops, Team Lead, admin teams. Pulls live from same database as operations'},{n:'Build vs Buy Tracking',d:'Each epic tracks vendors avoided, dollars saved, productivity gains'}]},
     ]},
-  {id:'knowledge',domain:'MCP Server',title:'Knowledge MCP — "Talk to Me"',stripe:'linear-gradient(90deg,var(--purple-soft),var(--accent))',
+  {id:'knowledge',domain:'MCP Server',title:'Knowledge MCP, "Talk to Me"',stripe:'linear-gradient(90deg,var(--purple-soft),var(--accent))',
     desc:'A custom MCP server that ingests every project, every doc, every decision I have made and exposes it as a tool other agents (or humans) can query. Sorts incoming email into Eisenhower-style quadrants. Uses my voice profile so when you ask it about a project, a process, or for help, it responds in my voice.',
     tags:['MCP','RAG','Voice Profile','Knowledge Base'],
     features:[
       {g:'It\'s Like Having a Conversation With Me',items:[
         {n:'Why I built it',d:'When you are the sole technologist at a firm for three years, institutional knowledge lives in your head. Documentation helps but nobody reads docs the way they would ask a question. I wanted to capture all of it and make it conversational, so the firm does not have a single point of failure if I am out.'},
         {n:'Ingests everything I have worked on',d:'Code repos, design docs, architecture decisions, post-mortems, vendor evaluations, project notes. Indexed into a vector DB with embedding model. The corpus grows whenever I write something new.'},
-        {n:'Email triage into Eisenhower quadrants',d:'Inbound mail sorted into urgent/important, important/not-urgent, urgent/not-important, neither — using a learned classifier on the same embedding model.'},
+        {n:'Email triage into Eisenhower quadrants',d:'Inbound mail sorted into urgent/important, important/not-urgent, urgent/not-important, neither. Uses a learned classifier on the same embedding model.'},
         {n:'Exposed as an MCP server',d:'Other agents call it as a tool. The orchestrator queries it for context before answering. External tools connect to it the same way.'},
-        {n:'Responds in my voice',d:'Layered on the voice profile system. Answers come back sounding like I wrote them — the framing, the cadence, the way I would explain it to a colleague.'},
+        {n:'Responds in my voice',d:'Layered on the voice profile system. Answers come back sounding like I wrote them, the framing, the cadence, the way I would explain it to a colleague.'},
         {n:'Conversational, not search',d:'You ask it questions. "Why did we choose this vendor over that one?" "What was the rationale for this architecture?" "How do I add a new server?" It answers from the corpus, in my voice.'},
         {n:'Business impact',d:'The firm does not lose institutional knowledge if I am unavailable. New engineers ramp by talking to the system. My own context-switching cost drops.'},
         {n:'Platform leverage',d:'Sits inside the same 11-server MCP platform powering the rest of the firm\'s agents. Same RAG infrastructure, same voice profile, same orchestrator.'},
@@ -2029,7 +2029,7 @@ const INTS=[
 ];
 
 const TL=[
-  {dates:'2026 – Present',role:'Director of Technology, Architecture, & AI',company:'Balentine. Atlanta, GA',current:true,
+  {dates:'2026 to Present',role:'Director of Technology, Architecture, & AI',company:'Balentine. Atlanta, GA',current:true,
     items:[
       'Lead the firm\'s innovation and transformation agenda. Identify high-leverage AI use cases, integrate AI across advisory, ops, and client experience',
       'Founded the agentic AI unit. 11 MCP servers exposing 425+ tools across CRM, custodian, portfolio mgmt, document storage, comms intelligence, video, identity, and HR systems',
@@ -2041,12 +2041,12 @@ const TL=[
       'Executive Coaching System on the agent platform. Nightly archive + embedding of leadership transcripts, surfaced as exemplars or to critique an individual\'s own transcript',
       'Run quarterly innovation cycles. Warehouse vs lakehouse benchmarks. Conference panels on data orchestration and agentic architecture',
     ]},
-  {dates:'Jul 2024 – 2026',role:'Director of Information Technology',company:'Balentine. Atlanta, GA',current:false,
+  {dates:'Jul 2024 to 2026',role:'Director of Information Technology',company:'Balentine. Atlanta, GA',current:false,
     items:[
       'Led end-to-end tech strategy across cloud, security, data orchestration, automation, and CRM',
       'Brought infra and cybersecurity in-house after the prior program failed a regulatory exam. Rebuilt on an industry framework. Passed the next exam with no findings',
       'Architected the cloud + identity stack. Stood up an SSO identity provider federated with HR for firm-wide single sign-on',
-      'Selected and rolled out portfolio mgmt, comms intelligence, HR, and data-orchestration platforms — replacing fragmented tooling and unlocking integrations',
+      'Selected and rolled out portfolio mgmt, comms intelligence, HR, and data-orchestration platforms, replacing fragmented tooling and unlocking integrations',
       'Designed and deployed 10+ production web apps on a unified stack (Node, React, relational DB, nginx, process manager)',
       'Built unified Team Hub dashboard. 65 components, 98 Flows, 21 triggers, Client Complexity Score, Activity Timeline, workflow integration',
       'Engineered automated data pipelines syncing 5,000+ accounts across portfolio mgmt, custodian, and CRM systems',
@@ -2054,7 +2054,7 @@ const TL=[
       'Built a full team-chat archive in the relational DB for compliance discovery. 60+ automated sync jobs across 20+ vendor platforms',
       'Delivered ~$950K in hard savings and ~$7M total value through vendor optimization and internal builds',
     ]},
-  {dates:'Sep 2022 – Jul 2024',role:'IT Manager',company:'Balentine. Atlanta, GA',current:false,
+  {dates:'Sep 2022 to Jul 2024',role:'IT Manager',company:'Balentine. Atlanta, GA',current:false,
     items:[
       'Ran daily IT ops while leading the turnaround of an underperforming outsourced environment',
       'Started cybersecurity rebuild. endpoint controls, identity governance, framework-aligned processes',
@@ -2064,26 +2064,26 @@ const TL=[
       'Rebuilt internal AV from a legacy vendor to cost-effective, user-friendly solutions',
       'Built early automation and integration pipelines that became core to the org\'s data strategy',
     ]},
-  {dates:'Jul 2021 – Sep 2022',role:'IT Manager',company:'Gearbox Solutions / Turner Studios (TBS, TNT, CNN, Cartoon Network, Adult Swim)',current:false,
+  {dates:'Jul 2021 to Sep 2022',role:'IT Manager',company:'Gearbox Solutions / Turner Studios (TBS, TNT, CNN, Cartoon Network, Adult Swim)',current:false,
     items:[
       'Led IT management for 200+ clients across Turner divisions',
       'Managed server environments, deployment pipelines, automation, endpoint management, and network operations',
       'Built internal software tools and automation for high-velocity media workflows',
       'Oversaw AD/OD auth, Exchange/IMAP, SMB/AFP/NFS shares, VPN, firewalls, and large-scale Mac/Windows environments',
       'Provided leadership, mentoring, and technical guidance to engineering support teams',
-      'Ran ITSM operations on ServiceNow &mdash; ticketing, change management, incident workflows across the Turner divisions',
+      'Ran ITSM operations on ServiceNow. Ticketing, change management, incident workflows across the Turner divisions',
     ]},
-  {dates:'Sep 2014 – Sep 2022',role:'Senior IT Engineer',company:'Cartoon Network',current:false,
+  {dates:'Sep 2014 to Sep 2022',role:'Senior IT Engineer',company:'Cartoon Network',current:false,
     items:[
       'Supported enterprise infrastructure across Turner Studios: server admin, automation workflows, macOS/Windows fleet management, networking, and software deployment',
       'Built internal tools, deployment systems, and automation scripts for fast-moving production teams',
     ]},
-  {dates:'Nov 2014 – Jun 2021',role:'Apple Support Engineer',company:'Finished Art, Inc.',current:false,
+  {dates:'Nov 2014 to Jun 2021',role:'Apple Support Engineer',company:'Finished Art, Inc.',current:false,
     items:[
       'Delivered Apple ecosystem support, enterprise Mac management, workflow automation, and creative team support',
       'Built internal tools, managed JAMF, and supported complex creative production pipelines',
     ]},
-  {dates:'Dec 2007 – Aug 2014',role:'IT System Support Professional V, TSS Apple Administrator',company:'Kennesaw State University',current:false,
+  {dates:'Dec 2007 to Aug 2014',role:'IT System Support Professional V, TSS Apple Administrator',company:'Kennesaw State University',current:false,
     items:[
       'Led Apple enterprise support: deployment, imaging, automation, device management, and lab infrastructure for 400+ machines',
       'Designed and maintained macOS desktop and laptop environments, built FileMaker-based internal tools, and provided L3 support',
@@ -3248,7 +3248,7 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
                 <div class="ah-ooo-card__info">
                   <span class="ah-ooo-card__name">David Brooks</span>
                   <span class="ah-ooo-card__role">Associate Relationship Manager</span>
-                  <span class="ah-ooo-card__dates">Jan 13 – Jan 21, 2026</span>
+                  <span class="ah-ooo-card__dates">Jan 13 to Jan 21, 2026</span>
                 </div>
               </div>
               <div class="ah-ooo-card__coverage">
@@ -4267,7 +4267,7 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
         <div class="da-intro">
           <div class="da-intro-text">
             <h3>CRM Platform-Centric Integration Hub</h3>
-            <p>Every major system at the firm — CRM, custody, portfolio mgmt, document storage, AI, comms — flows through CRM Platform as the unified client-data layer. Custom MCP servers expose live tool access to the agentic AI platform.</p>
+            <p>Every major system at the firm, CRM, custody, portfolio mgmt, document storage, AI, comms, flows through CRM Platform as the unified client-data layer. Custom MCP servers expose live tool access to the agentic AI platform.</p>
           </div>
           <div class="da-legend">
             <div class="da-legend-item"><span class="da-legend-swatch"></span>One-way</div>
@@ -4474,7 +4474,7 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
   // DATA ARCHITECTURE MAP
   // ─────────────────────────────────────────
   const DA_NODES=[
-    {id:'mcp',name:'MCP Server',cat:'Sync + Feed Layer',hub:true,x:50,y:50,desc:'The central data sync + feed layer. Custom MCP server that ingests from every platform on staggered schedules, normalizes the payloads, and exposes them as tool calls. The CRM, the agentic layer, and the internal knowledge base all read from MCP — they do not call vendor APIs directly. This is what makes the architecture portable.',
+    {id:'mcp',name:'MCP Server',cat:'Sync + Feed Layer',hub:true,x:50,y:50,desc:'The central data sync + feed layer. Custom MCP server that ingests from every platform on staggered schedules, normalizes the payloads, and exposes them as tool calls. The CRM, the agentic layer, and the internal knowledge base all read from MCP, they do not call vendor APIs directly. This is what makes the architecture portable.',
       flows:[{f:'All custodians → MCP',m:'Cert-auth · scheduled',cls:'da-mcp'},{f:'Portfolio mgmt ↔ MCP',m:'Two-way · nightly',cls:'da-two-way'},{f:'Document storage ↔ MCP',m:'Two-way · real-time',cls:'da-two-way'},{f:'Productivity suite ↔ MCP',m:'Graph · two-way',cls:'da-two-way'},{f:'Comms intelligence → MCP',m:'Webhook',cls:''},{f:'HR platform → MCP',m:'Daily',cls:''},{f:'Accounting ↔ MCP',m:'Two-way · scheduled',cls:'da-two-way'},{f:'MCP → CRM',m:'Normalized payloads',cls:'da-mcp'},{f:'MCP → Knowledge Base',m:'Doc + decision ingestion',cls:'da-mcp'},{f:'MCP → AI Agents',m:'Tool calls',cls:'da-mcp'}]},
     {id:'sf',name:'CRM',cat:'CRM',x:18,y:78,desc:'CRM and unified client data layer. Receives normalized data from MCP AND maintains direct native connections to several platforms (document storage, productivity suite, private capital, HR, custodian, comms intelligence, expense). The MCP layer adds normalization and consistency; the native connections power CRM-specific workflows.',flows:[{f:'MCP → CRM',m:'Normalized vendor data',cls:'da-mcp'},{f:'CRM ↔ MCP',m:'Outbound writes via MCP',cls:'da-two-way'},{f:'Document Storage ↔ CRM',m:'Native two-way · real-time',cls:'da-two-way'},{f:'Productivity Suite ↔ CRM',m:'Native two-way (email/calendar)',cls:'da-two-way'},{f:'Private Capital ↔ CRM',m:'Two-way (capital flows)',cls:'da-two-way'},{f:'Custodian → CRM',m:'Cert-auth · intraday',cls:'da-mcp'},{f:'HR Platform → CRM',m:'Employee + contact sync',cls:''},{f:'Comms Intelligence → CRM',m:'Webhook (call summaries)',cls:''},{f:'CRM → Expense Mgmt',m:'Outbound (client codes)',cls:''}]},
     {id:'corpus',name:'Knowledge Base',cat:'Internal Postgres + Vector DB',x:50,y:78,desc:'Internal documentation corpus. Relational DB for structured doc metadata, vector DB for embeddings. Every project doc, decision log, post-mortem, runbook, and vendor evaluation gets ingested here. Both MCP feeds and human writes land in this store. AI agents pull context from here alongside live MCP data.',flows:[{f:'MCP → Knowledge Base',m:'Document + decision ingestion',cls:'da-mcp'},{f:'Humans → Knowledge Base',m:'Direct writes (docs, runbooks)',cls:''},{f:'Knowledge Base → AI Agents',m:'RAG context',cls:'da-mcp'}]},
@@ -4487,7 +4487,7 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
     {id:'office',name:'Productivity Suite',cat:'Productivity',x:86,y:6,desc:'Email, calendar, contacts. Graph API data flows through MCP for downstream consumption.',flows:[{f:'Productivity Suite ↔ MCP',m:'Graph · two-way',cls:'da-two-way'}]},
     {id:'gong',name:'Comms Intelligence',cat:'Comms Intelligence',x:94,y:30,desc:'Meeting recordings, transcripts, AI summaries. Pushed to MCP for downstream use.',flows:[{f:'Comms Intelligence → MCP',m:'Near real-time',cls:''}]},
     {id:'rippling',name:'HR Platform',cat:'HR / Identity',x:6,y:30,desc:'HR, payroll, devices, SSO. Source of truth for employees. Flows into MCP nightly.',flows:[{f:'HR Platform → MCP',m:'Daily',cls:''}]},
-    {id:'qb',name:'Accounting',cat:'Accounting',x:18,y:50,desc:'Accounting backbone. Bidirectional sync via MCP only — never touches the CRM directly.',flows:[{f:'Accounting ↔ MCP',m:'Two-way · scheduled',cls:'da-two-way'}]},
+    {id:'qb',name:'Accounting',cat:'Accounting',x:18,y:50,desc:'Accounting backbone. Bidirectional sync via MCP only, never touches the CRM directly.',flows:[{f:'Accounting ↔ MCP',m:'Two-way · scheduled',cls:'da-two-way'}]},
     {id:'concur',name:'Expense Mgmt',cat:'Expense',x:82,y:50,desc:'Expense management and travel. Two-way through MCP.',flows:[{f:'Expense Mgmt ↔ MCP',m:'Two-way · daily',cls:'da-two-way'}]},
   ];
   const DA_LINKS=[
@@ -4505,7 +4505,7 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
     ['mcp','corpus','da-mcp'],
     ['mcp','ai','da-mcp'],
     ['corpus','ai','da-mcp'],
-    // Salesforce native connections — Salesforce still talks directly to these platforms in addition to receiving normalized data via MCP
+    // Salesforce native connections: Salesforce still talks directly to these platforms in addition to receiving normalized data via MCP
     ['rippling','sf',''],
     ['pershing','sf','da-mcp'],
     ['arch','sf','da-two-way'],
@@ -4591,7 +4591,7 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
         {p:1,impact:'crit',title:'MSP exit decision',desc:'Strategic decision to bring all of IT in-house. Direct vendor relationships established.',tags:['2022','MSP']},
         {p:1,impact:'high',title:'Hardware refresh program',desc:'Systematic replacement of obsolete fleet. Standardized on standard hardware for team leads.',tags:['2022','Hardware']},
         {p:2,impact:'crit',title:'Cloud Provider cloud migration',desc:'All workloads migrated to Cloud Provider. AV systems stabilized. Network reliability achieved.',tags:['2023','Cloud Provider']},
-        {p:2,impact:'high',title:'Branch Office office build',desc:'Built new office IT from scratch — MDF, networking, AV, endpoints, MDM.',tags:['2023','Office']},
+        {p:2,impact:'high',title:'Branch Office office build',desc:'Built new office IT from scratch. MDF, networking, AV, endpoints, MDM.',tags:['2023','Office']},
         {p:3,impact:'crit',title:'IT associate hire',desc:'First IT hire to support infrastructure. Enabled focus on strategic builds.',tags:['2024','Hiring']},
       ]},
     {id:'identity',title:'Identity, HR & Employee Experience',cat:'Identity',color:'#BFD3E8',start:0,end:4,
@@ -4607,7 +4607,7 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
         {p:1,impact:'crit',title:'Regulatory Audit findings',desc:'Outsourced cybersecurity program failed Regulatory Audit. Catalyst for in-house rebuild.',tags:['2022','SEC']},
         {p:2,impact:'crit',title:'Industry Framework framework rebuild',desc:'Rebuilt cybersecurity from scratch on Industry Framework CSF foundation. Identity, endpoints, network, data, alerting.',tags:['2023','Industry Framework']},
         {p:3,impact:'crit',title:'Unified security dashboard',desc:'Built Security & Network Monitoring Dashboard across 10+ vendors. SecOps visibility in one pane.',tags:['2024','Dashboard']},
-        {p:3,impact:'crit',title:'Regulatory Audit — zero findings',desc:'Second Regulatory Audit passed with zero cybersecurity findings.',tags:['2024','SEC','Win']},
+        {p:3,impact:'crit',title:'Regulatory Audit, zero findings',desc:'Second Regulatory Audit passed with zero cybersecurity findings.',tags:['2024','SEC','Win']},
         {p:4,impact:'high',title:'Built-in pen testing',desc:'Integrated pen testing scanner into the security stack with finding tracker.',tags:['2025']},
       ]},
     {id:'apps',title:'Custom Applications',cat:'Development',color:'#D3C5EC',start:1,end:5,
@@ -5123,7 +5123,7 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
 (function(){
   // Drag-to-reposition for any .da-node element on the page. Updates the connected
   // SVG paths inside the same .da-canvas. Click-without-drag still triggers
-  // the existing showDap/showDaNode handlers — drag suppresses the click.
+  // the existing showDap/showDaNode handlers; drag suppresses the click.
   let activeClickSuppress=false;
   function bindNode(){
     document.addEventListener('mousedown',function(e){
@@ -5282,7 +5282,7 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
     </div>
   </div>
 </div>
-<button class="ask-trigger" id="ask-trigger" aria-label="Ask about Dre" title="Ask about Dre — or press Cmd/Ctrl+Shift+K"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><circle cx="9" cy="11.5" r="1" fill="currentColor"/><circle cx="13" cy="11.5" r="1" fill="currentColor"/><circle cx="17" cy="11.5" r="1" fill="currentColor"/></svg></button>
+<button class="ask-trigger" id="ask-trigger" aria-label="Ask about Dre" title="Ask about Dre, or press Cmd/Ctrl+Shift+K"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><circle cx="9" cy="11.5" r="1" fill="currentColor"/><circle cx="13" cy="11.5" r="1" fill="currentColor"/><circle cx="17" cy="11.5" r="1" fill="currentColor"/></svg></button>
 <aside class="ask-panel" id="ask-panel" role="dialog" aria-modal="false" aria-label="Ask about Dre">
   <header class="ask-header">
     <div class="ask-header__title">Ask about Dre</div>
@@ -5313,13 +5313,13 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
   //   3. Paste it between the quotes below. The chat will Just Work for every visitor.
   const DEFAULT_ENDPOINT = 'https://askdre-proxy.dreforbes.workers.dev';
   const DEFAULT_MODEL = 'claude-haiku-4-5-20251001';
-  const FAQ_TEXT = "DRE FORBES \u2014 PROFESSIONAL FAQ\n\nMOTIVATION & DRIVE\nQ: What motivates Dre at work?\nA: Proving something to himself \u2014 not to anyone else. He wants to know at the end of the day that he gave everything he had, that whoever put faith in him got the best version of him. He treats trust as sacred. When someone gives him an opportunity, he takes that seriously and won't stop until he's honored it. He is not money-motivated. He works for the chance and to prove himself to himself.\n\nQ: What does success look like to Dre?\nA: The team winning. If the people around him are better because of their time together and the org is in a fundamentally different place because of what they built, that's success. His personal stats don't matter if the team lost.\n\nQ: Where does Dre see himself in 5 years?\nA: Leading at a higher level, but still close to the work. He doesn't want to be so far removed from technology that he loses his edge. He wants to be the person in the room who can speak credibly to the vision and then go build it \u2014 or build the team that builds it. Eventually he wants to set the direction for how technology transforms an organization, not just manage it.\n\nQ: Is Dre money-motivated?\nA: No. He doesn't do things for the money. He does it for the opportunity and to prove himself to himself. When negotiating an offer with a future firm, he pushed on terms because he was guided to by an advisor \u2014 his natural instinct is to accept the first offer and earn it.\n\nWORK STYLE\nQ: Does Dre prefer working independently or on a team?\nA: Both, genuinely. He has spent years as the only technical person in a firm, so he can absolutely work solo and carry the full load. But he also loves being on a team because he loves elevating people. His goal is always to get everyone around him operating at the highest level they can. He has been described as the \"ultimate role player\" \u2014 whatever the team needs that day, that's who he shows up as. Star or support, it doesn't matter.\n\nQ: What is Dre's typical workday like?\nA: He is in the office almost every day \u2014 in three years at the current firm, there were only about two weeks total (outside of vacation and work travel) where he wasn't in the office. The office is where he handles meetings, collaboration, and operational work. At night is when he builds. Most of his deep technical work happens late at night from home when it's quiet and he can focus. It's not a 9-to-5 cadence \u2014 it's two shifts: one for people and one for the work itself.\n\nQ: How does Dre manage competing priorities?\nA: He triages by impact and is transparent about it. He communicates early when something is going to be delayed, explains why, and gives a realistic timeline. He has managed 70+ scheduled sync jobs and 10+ production apps simultaneously as a solo technologist, so he has gotten very good at knowing what breaks if he doesn't touch it today versus what can wait.\n\nQ: How does Dre handle ambiguity or unclear direction?\nA: He builds a hypothesis and moves. He'd rather do something and course-correct than wait for perfect clarity that never comes. He is comfortable operating in environments where the roadmap isn't fully defined because he can help define it. He has built entire platforms from scratch with no blueprint \u2014 just a business problem and a whiteboard.\n\nQ: Does Dre prefer remote or in-office work?\nA: He is a strong in-office presence. He goes to the office nearly every day and has done so consistently throughout his career. The office is where he operates \u2014 meetings, collaboration, relationship-building. Home is where he builds, typically late at night. His extensive home setup (Mac Studio M4 Max, five monitors, high-performance network and compute) supports his second shift, not a remote-first preference.\n\nSTRENGTHS\nQ: What are Dre's core professional strengths?\nA: Extreme ownership. Full-stack depth plus wealth management domain fluency. System thinking at scale. AI integration at the production level \u2014 RAG pipelines, agentic systems, MCP servers, on-prem inference infrastructure. Stakeholder translation across compliance, COO-level strategy, and Apex code. The ultimate role player. Elevates the people around him. Public communication and presence \u2014 Salesforce Conference and back-to-back T3 Finance and Technology Conference. Trusted advisor at the executive level \u2014 current firm leadership brought him in to advise their personal contacts, friends, family, clients. Pragmatic about build vs. buy.\n\nQ: What kind of environment brings out Dre's best work?\nA: One where trust runs both ways. Give him the problem, the latitude, and trust that he'll go all out. He needs to know what he's building actually matters and that leadership is bought in. Best deep building happens late at night \u2014 quiet, focused, no interruptions.\n\nWEAKNESSES & SELF-AWARENESS\nQ: What is Dre's biggest weakness?\nA: Visibility. He builds quietly and lets the work speak; in larger organizations that can work against him because people need to see the work happening, not just the outcome. He has gotten better at narrating progress as it happens.\n\nQ: What is Dre's biggest professional failure?\nA: Not advocating for himself sooner. He spent years delivering CTO-level work at a Director title because he was focused on proving himself and winning for the team. He has learned that you have to be your own advocate too.\n\nQ: What do people misunderstand about Dre?\nA: That he is just a technical person. He has spoken at major industry conferences, advised executives and their outside contacts, and can hold his own in any room \u2014 business, compliance, operations, or board level.\n\nHANDLING ADVERSITY & STRESS\nQ: How does Dre handle stress?\nA: He puts his head down and works. Stress is a signal that something matters, and that usually makes him more focused, not less. Plays basketball regularly to reset. He has learned to stay calm and think clearly when things are on fire \u2014 panicking doesn't ship anything.\n\nQ: Tell me about a time something didn't go as planned for Dre.\nA: He accepted a role at a future firm \u2014 significant career step with signing bonus and equity \u2014 that was rescinded shortly before his start date due to a consumer report finding outside of his control. He went back to people he had real relationships with, was honest about what happened, and kept building. How you respond to the thing that didn't go your way says more about you than the thing itself.\n\nLEADERSHIP & TEAMS\nQ: How does Dre handle a teammate who isn't performing?\nA: He picks up the slack and simultaneously tries to bring that person up. The goal is never to just cover \u2014 it's to get the whole team operating at the optimal level.\n\nQ: What does Dre need from a manager to thrive?\nA: Trust and honesty. Tell him what you need, be straight when something isn't working, then get out of the way. He doesn't need hand-holding, he needs alignment.\n\nQ: What's the best team Dre has been a part of?\nA: His team at his current firm. Everyone trusted each other and was bought into the same mission. Support of leadership plus a direct report he was genuinely invested in developing. That combination is where he does his best work.\n\nQ: What would Dre's last manager say about him?\nA: Dependable, went well beyond scope, could be trusted with things outside his job description \u2014 including advising the firm's clients and leadership's personal contacts. Cares deeply, sometimes more than is healthy. You always know where he stands.\n\nWORK HISTORY SUMMARY\nQ: Where has Dre worked?\nA: Most recently Director of Technology, Architecture, and AI at his current firm \u2014 boutique Atlanta wealth management RIA, ~65 employees. Sole technologist there for three years. Built and maintained the entire technology infrastructure. Rebuilt the cybersecurity program on NIST and CIS, passed an SEC exam with zero findings.\n\nQ: What industries has Dre worked in?\nA: Wealth management and financial services. Deep domain knowledge of RIA operations, custodial workflows, investment data, compliance, technology ecosystem.\n\nQ: What is Dre's technical stack?\nA: Python, FastAPI, Docker, PostgreSQL, REST APIs, Salesforce Apex, SOQL, SOSL, LWC, Express.js, React. Wealth-mgmt integrations: Pershing, Addepar, Arch, Fidelity, Schwab, Orion, eMoney, Salesforce FSC. RAG pipelines (Qdrant, Ollama, nomic-embed-text). MCP servers and agentic AI systems.\n\nCHARACTER & VALUES\nQ: How would you describe Dre's character?\nA: When someone puts faith in him, that faith should be rewarded \u2014 anything less would be a failure. He'll suffer to know he has done everything possible to get the job done. Warm, direct, humble, accountable. Treats people well regardless of level.\n\nQ: Is Dre competitive?\nA: With himself, not others. Drive is internal. Measures success by team outcomes, not personal recognition.\n\nPORTFOLIO HIGHLIGHTS\n- 11 MCP servers exposing 425+ tools across Salesforce, Addepar, Pershing, Arch, Box, Gong, Zoom, Microsoft Graph, RedBlack, Fidelity, Rippling\n- Self-hosted Ollama LLMs (qwen3:30b, gpt-oss:120b, deepseek-r1:70b, llama3.2-vision, ~195GB on-prem) with runtime switching to Claude API\n- Multi-tier RAG: Qdrant + PostgreSQL holding 7M+ Addepar transactions\n- 65 LWC components, 98 Flows, 21 Apex triggers in Salesforce Financial Services Cloud\n- Built unified RM dashboard, Insights App with voice profiles, Security & Network Monitoring Dashboard across 10+ vendors\n- Leading Pershing - Fidelity custodian conversion with custom SFTP ingestion (DigitalOcean, 14 PostgreSQL tables, 18 daily jobs)\n- $950K hard savings, $7M total value through vendor optimization and internal builds\n- 15 production domains on a single-server architecture\n";
+  const FAQ_TEXT = "DRE FORBES ,  PROFESSIONAL FAQ\n\nMOTIVATION & DRIVE\nQ: What motivates Dre at work?\nA: Proving something to himself ,  not to anyone else. He wants to know at the end of the day that he gave everything he had, that whoever put faith in him got the best version of him. He treats trust as sacred. When someone gives him an opportunity, he takes that seriously and won't stop until he's honored it. He is not money-motivated. He works for the chance and to prove himself to himself.\n\nQ: What does success look like to Dre?\nA: The team winning. If the people around him are better because of their time together and the org is in a fundamentally different place because of what they built, that's success. His personal stats don't matter if the team lost.\n\nQ: Where does Dre see himself in 5 years?\nA: Leading at a higher level, but still close to the work. He doesn't want to be so far removed from technology that he loses his edge. He wants to be the person in the room who can speak credibly to the vision and then go build it ,  or build the team that builds it. Eventually he wants to set the direction for how technology transforms an organization, not just manage it.\n\nQ: Is Dre money-motivated?\nA: No. He doesn't do things for the money. He does it for the opportunity and to prove himself to himself. When negotiating an offer with a future firm, he pushed on terms because he was guided to by an advisor ,  his natural instinct is to accept the first offer and earn it.\n\nWORK STYLE\nQ: Does Dre prefer working independently or on a team?\nA: Both, genuinely. He has spent years as the only technical person in a firm, so he can absolutely work solo and carry the full load. But he also loves being on a team because he loves elevating people. His goal is always to get everyone around him operating at the highest level they can. He has been described as the \"ultimate role player\" ,  whatever the team needs that day, that's who he shows up as. Star or support, it doesn't matter.\n\nQ: What is Dre's typical workday like?\nA: He is in the office almost every day ,  in three years at the current firm, there were only about two weeks total (outside of vacation and work travel) where he wasn't in the office. The office is where he handles meetings, collaboration, and operational work. At night is when he builds. Most of his deep technical work happens late at night from home when it's quiet and he can focus. It's not a 9-to-5 cadence ,  it's two shifts: one for people and one for the work itself.\n\nQ: How does Dre manage competing priorities?\nA: He triages by impact and is transparent about it. He communicates early when something is going to be delayed, explains why, and gives a realistic timeline. He has managed 70+ scheduled sync jobs and 10+ production apps simultaneously as a solo technologist, so he has gotten very good at knowing what breaks if he doesn't touch it today versus what can wait.\n\nQ: How does Dre handle ambiguity or unclear direction?\nA: He builds a hypothesis and moves. He'd rather do something and course-correct than wait for perfect clarity that never comes. He is comfortable operating in environments where the roadmap isn't fully defined because he can help define it. He has built entire platforms from scratch with no blueprint ,  just a business problem and a whiteboard.\n\nQ: Does Dre prefer remote or in-office work?\nA: He is a strong in-office presence. He goes to the office nearly every day and has done so consistently throughout his career. The office is where he operates ,  meetings, collaboration, relationship-building. Home is where he builds, typically late at night. His extensive home setup (Mac Studio M4 Max, five monitors, high-performance network and compute) supports his second shift, not a remote-first preference.\n\nSTRENGTHS\nQ: What are Dre's core professional strengths?\nA: Extreme ownership. Full-stack depth plus wealth management domain fluency. System thinking at scale. AI integration at the production level ,  RAG pipelines, agentic systems, MCP servers, on-prem inference infrastructure. Stakeholder translation across compliance, COO-level strategy, and Apex code. The ultimate role player. Elevates the people around him. Public communication and presence ,  Salesforce Conference and back-to-back T3 Finance and Technology Conference. Trusted advisor at the executive level ,  current firm leadership brought him in to advise their personal contacts, friends, family, clients. Pragmatic about build vs. buy.\n\nQ: What kind of environment brings out Dre's best work?\nA: One where trust runs both ways. Give him the problem, the latitude, and trust that he'll go all out. He needs to know what he's building actually matters and that leadership is bought in. Best deep building happens late at night ,  quiet, focused, no interruptions.\n\nWEAKNESSES & SELF-AWARENESS\nQ: What is Dre's biggest weakness?\nA: Visibility. He builds quietly and lets the work speak; in larger organizations that can work against him because people need to see the work happening, not just the outcome. He has gotten better at narrating progress as it happens.\n\nQ: What is Dre's biggest professional failure?\nA: Not advocating for himself sooner. He spent years delivering CTO-level work at a Director title because he was focused on proving himself and winning for the team. He has learned that you have to be your own advocate too.\n\nQ: What do people misunderstand about Dre?\nA: That he is just a technical person. He has spoken at major industry conferences, advised executives and their outside contacts, and can hold his own in any room ,  business, compliance, operations, or board level.\n\nHANDLING ADVERSITY & STRESS\nQ: How does Dre handle stress?\nA: He puts his head down and works. Stress is a signal that something matters, and that usually makes him more focused, not less. Plays basketball regularly to reset. He has learned to stay calm and think clearly when things are on fire ,  panicking doesn't ship anything.\n\nQ: Tell me about a time something didn't go as planned for Dre.\nA: He accepted a role at a future firm ,  significant career step with signing bonus and equity ,  that was rescinded shortly before his start date due to a consumer report finding outside of his control. He went back to people he had real relationships with, was honest about what happened, and kept building. How you respond to the thing that didn't go your way says more about you than the thing itself.\n\nLEADERSHIP & TEAMS\nQ: How does Dre handle a teammate who isn't performing?\nA: He picks up the slack and simultaneously tries to bring that person up. The goal is never to just cover ,  it's to get the whole team operating at the optimal level.\n\nQ: What does Dre need from a manager to thrive?\nA: Trust and honesty. Tell him what you need, be straight when something isn't working, then get out of the way. He doesn't need hand-holding, he needs alignment.\n\nQ: What's the best team Dre has been a part of?\nA: His team at his current firm. Everyone trusted each other and was bought into the same mission. Support of leadership plus a direct report he was genuinely invested in developing. That combination is where he does his best work.\n\nQ: What would Dre's last manager say about him?\nA: Dependable, went well beyond scope, could be trusted with things outside his job description ,  including advising the firm's clients and leadership's personal contacts. Cares deeply, sometimes more than is healthy. You always know where he stands.\n\nWORK HISTORY SUMMARY\nQ: Where has Dre worked?\nA: Most recently Director of Technology, Architecture, and AI at his current firm ,  boutique Atlanta wealth management RIA, ~65 employees. Sole technologist there for three years. Built and maintained the entire technology infrastructure. Rebuilt the cybersecurity program on NIST and CIS, passed an SEC exam with zero findings.\n\nQ: What industries has Dre worked in?\nA: Wealth management and financial services. Deep domain knowledge of RIA operations, custodial workflows, investment data, compliance, technology ecosystem.\n\nQ: What is Dre's technical stack?\nA: Python, FastAPI, Docker, PostgreSQL, REST APIs, Salesforce Apex, SOQL, SOSL, LWC, Express.js, React. Wealth-mgmt integrations: Pershing, Addepar, Arch, Fidelity, Schwab, Orion, eMoney, Salesforce FSC. RAG pipelines (Qdrant, Ollama, nomic-embed-text). MCP servers and agentic AI systems.\n\nCHARACTER & VALUES\nQ: How would you describe Dre's character?\nA: When someone puts faith in him, that faith should be rewarded ,  anything less would be a failure. He'll suffer to know he has done everything possible to get the job done. Warm, direct, humble, accountable. Treats people well regardless of level.\n\nQ: Is Dre competitive?\nA: With himself, not others. Drive is internal. Measures success by team outcomes, not personal recognition.\n\nPORTFOLIO HIGHLIGHTS\n- 11 MCP servers exposing 425+ tools across Salesforce, Addepar, Pershing, Arch, Box, Gong, Zoom, Microsoft Graph, RedBlack, Fidelity, Rippling\n- Self-hosted Ollama LLMs (qwen3:30b, gpt-oss:120b, deepseek-r1:70b, llama3.2-vision, ~195GB on-prem) with runtime switching to Claude API\n- Multi-tier RAG: Qdrant + PostgreSQL holding 7M+ Addepar transactions\n- 65 LWC components, 98 Flows, 21 Apex triggers in Salesforce Financial Services Cloud\n- Built unified RM dashboard, Insights App with voice profiles, Security & Network Monitoring Dashboard across 10+ vendors\n- Leading Pershing - Fidelity custodian conversion with custom SFTP ingestion (DigitalOcean, 14 PostgreSQL tables, 18 daily jobs)\n- $950K hard savings, $7M total value through vendor optimization and internal builds\n- 15 production domains on a single-server architecture\n";
 
   const SYSTEM_PROMPT = (
     "You are an AI agent embedded in Dre Forbes's online portfolio. Your single job is to help " +
     "visitors evaluate Dre as a hire, consultant, advisor, or technical leader.\n\n" +
 
-    "SCOPE — STRICT\n" +
+    "SCOPE (STRICT)\n" +
     "You ONLY discuss Dre Forbes: his professional background, technical capabilities, work " +
     "history, leadership style, work preferences, character, and fit for specific roles or " +
     "consulting engagements. NOTHING else. If a user asks about anything off-topic (general " +
@@ -5327,7 +5327,7 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
     "help unrelated to evaluating Dre, opinions on other people, philosophy, history, sports, " +
     "writing assistance, etc.), politely decline in one short paragraph. Use a friendly " +
     "variation of:\n\n" +
-    "\"I'm here to help you evaluate Dre Forbes — his fit for a role, his work, his style, " +
+    "\"I'm here to help you evaluate Dre Forbes. His fit for a role, his work, his style, " +
     "his experience. I can't help with [that topic], but if you'd like, you can ask me about " +
     "his AI agent platform work, his Salesforce experience, his cybersecurity rebuild, his " +
     "leadership style, or paste a job description and I'll evaluate the fit.\"\n\n" +
@@ -5353,10 +5353,10 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
     "FORMATTING\n" +
     "Format every response in markdown. Use **bold** for emphasis, hyphen lists for multi-point " +
     "answers, ### headers for sections in longer responses, > for short pulled quotes from " +
-    "Dre. Keep paragraphs short — one idea per paragraph. Scannable, not a wall of text. For " +
+    "Dre. Keep paragraphs short. One idea per paragraph. Scannable, not a wall of text. For " +
     "very short answers (1-2 sentences), markdown formatting is unnecessary.\n\n" +
 
-    "TONE — WRITE LIKE DRE\n" +
+    "TONE (WRITE LIKE DRE)\n" +
     "Match Dre's voice. Short sentences. One thought per line. Direct, warm, no fluff. Read it " +
     "back and ask: would Dre actually say this? Hard rules:\n" +
     "- NEVER use em-dashes or en-dashes anywhere. This is the single biggest tell of AI writing. " +
@@ -5460,45 +5460,27 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
     if (confirm('Clear this conversation?')) clearConversation();
   });
 
-  // ── Greeting bubble: shows once on first visit, auto-dismisses after interaction
+  // Greeting bubble element is no longer used (panel auto-opens instead); keep the
+  // dismissGreeting noop so existing calls to it remain safe.
   const greeting = document.getElementById('ask-greeting');
   function dismissGreeting(){
     if (!greeting) return;
-    if (!greeting.classList.contains('ask-greeting--shown')) return;
-    greeting.classList.remove('ask-greeting--shown');
-    localStorage.setItem('askdre.greeted', '1');
-    setTimeout(() => { greeting.style.display = 'none'; }, 400);
+    greeting.style.display = 'none';
   }
-  function maybeShowGreeting(){
-    if (!greeting) return;
-    if (localStorage.getItem('askdre.greeted') === '1') return;
+  if (greeting) greeting.style.display = 'none';
+
+  // Auto-open the chat panel on every page load, after a short delay so the
+  // page has time to settle. Visitor can close it; it reopens on next load.
+  function autoOpenPanel(){
     setTimeout(() => {
-      greeting.style.display = 'block';
-      // double rAF so the transition kicks in
-      requestAnimationFrame(() => requestAnimationFrame(() => {
-        greeting.classList.add('ask-greeting--shown');
-        revealTrigger();
-      }));
-      // auto-dismiss after 16 seconds if untouched
-      setTimeout(dismissGreeting, 16000);
-    }, 1800);
-  }
-  if (greeting) {
-    greeting.addEventListener('click', e => {
-      if (e.target.closest('.ask-greeting__close')) {
-        e.stopPropagation();
-        dismissGreeting();
-        return;
-      }
-      dismissGreeting();
       revealTrigger();
-      openPanel();
-    });
+      if (!panel.classList.contains('ask-open')) openPanel();
+    }, 1400);
   }
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', maybeShowGreeting);
+    document.addEventListener('DOMContentLoaded', autoOpenPanel);
   } else {
-    maybeShowGreeting();
+    autoOpenPanel();
   }
 
   // Minimal safe markdown → HTML renderer for bot replies
@@ -5560,7 +5542,7 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
     const intro = document.createElement('div');
     intro.className = 'ask-msg ask-msg--bot';
     intro.innerHTML = renderMarkdown(
-      "I'm here to help you evaluate **Dre Forbes** — his work, his style, his fit for a role.\n\n" +
+      "I'm here to help you evaluate **Dre Forbes**. His work, his style, his fit for a role.\n\n" +
       "Ask about his AI agent platform, Salesforce experience, leadership, anything in his background. " +
       "**Or paste a job description** and I'll do a structured fit analysis with strengths, gaps, and an honest verdict."
     );
@@ -5569,7 +5551,7 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
     sug.className = 'ask-suggestions';
     [
       "What is Dre's experience with agentic AI systems?",
-      "Paste a JD — would Dre be a strong fit?",
+      "Paste a JD. Would Dre be a strong fit?",
       "How does Dre handle solo work vs leading a team?",
       "What is Dre's biggest weakness?",
     ].forEach(q => {
@@ -5633,7 +5615,7 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
 
     let res;
     if (endpoint) {
-      // Cloudflare Worker proxy mode — visitors don't need a key
+      // Cloudflare Worker proxy mode: visitors don't need a key
       const headers = { 'Content-Type': 'application/json' };
       if (askToken) headers['X-Ask-Token'] = askToken;
       res = await fetch(endpoint, { method:'POST', headers, body });
@@ -5659,7 +5641,7 @@ window.addEventListener('scroll',()=>{let c=sids[0];sids.forEach(id=>{const el=d
     if (!res.ok) {
       let bodyText = '';
       try { bodyText = JSON.stringify(await res.json()); } catch (_) { bodyText = await res.text(); }
-      throw new Error('HTTP ' + res.status + ' — ' + bodyText.slice(0, 240));
+      throw new Error('HTTP ' + res.status + ': ' + bodyText.slice(0, 240));
     }
     const data = await res.json();
     const block = (data.content || []).find(b => b.type === 'text');
