@@ -726,8 +726,8 @@ body{font-family:'Hanken Grotesk',-apple-system,sans-serif;background:var(--bg);
 </style>
 <section class="section obs" id="now">
   <div class="section-num" style="text-align:center">01 / APLODEX · CURRENT WORK</div>
-  <div class="section-title" style="text-align:center">What I&rsquo;m Doing Now</div>
-  <div class="section-desc" style="text-align:center;max-width:880px;margin-left:auto;margin-right:auto">I help companies actually understand how their business runs, then improve it without spending a fortune to do it. Technology comes first, then the right implementation, governance, and AI layered on top, so the work automates and scales. Same team, more output, a lot less stress.</div>
+  <div class="section-title" style="text-align:center">In Between Chapters</div>
+  <div class="section-desc" style="text-align:center;max-width:880px;margin-left:auto;margin-right:auto">My work centers on the secure integration of technology, culture, and process, helping organizations build the efficiency, productivity, and capability required to move forward in the age of AI.</div>
   <div class="now-grid">
     <div class="now-card">
       <div class="now-eyebrow">13-Week Engagement · Investment Counsel Firm</div>
@@ -754,15 +754,15 @@ body{font-family:'Hanken Grotesk',-apple-system,sans-serif;background:var(--bg);
 
 <section class="section obs" id="roles">
   <div class="section-num">01.5 / ROLES & RESPONSIBILITIES</div>
-  <div class="section-title">What I’ve Owned</div>
-  <div class="section-desc">End-to-end technology leadership. Rebuilt cybersecurity on a NIST foundation (zero regulatory findings), built custom software top to bottom, and stood up an autonomous AI agent platform.</div>
+  <div class="section-title">The Full Stack of Responsibility</div>
+  <div class="section-desc">The foundational pillars of the organization&rsquo;s technology were my responsibility. Day-to-day administration of identity management, endpoints, networking, communication, and cloud infrastructure, spanning multiple offices across the firm.</div>
   <div class="roles-grid" id="roles-grid"></div>
 </section>
 <div class="divider"><hr></div>
 
 <section class="section obs" id="ops">
   <div class="section-num">02 / OPERATIONAL TECHNOLOGY</div>
-  <div class="section-title">Systems I've Mastered</div>
+  <div class="section-title">Jack of All Systems</div>
   <div class="section-desc">Day-to-day administration I’ve owned and run. Identity, endpoints, networking, communication, and cloud infrastructure across multiple offices and firms.</div>
   <div class="ops-mastered-note" style="font-size:0.78rem;line-height:1.5;color:var(--text-muted);font-style:italic;margin:0 0 16px;padding:9px 13px;background:var(--surface-2);border:1px solid var(--border);border-top:2px solid var(--accent);border-radius:8px"><strong style="font-style:normal;color:var(--accent);font-weight:700">&#9432; Mastered</strong> means I've explored and used almost all of each system's features, across admin, integration, and development.</div>
   <div class="ops-grid" id="ops-grid"></div>
@@ -2144,7 +2144,7 @@ const OPS=[
 ];
 
 const PROJECTS=[
-  {id:'budget',demo:'budgetvar',domain:'budget.balentine.com',title:'Budget Application',stripe:'linear-gradient(90deg,var(--accent),var(--green-soft))',
+  {id:'budget',demo:'budgetvar',domain:'',title:'Budget Application',stripe:'linear-gradient(90deg,var(--accent),var(--green-soft))',
     desc:'Enterprise budgeting with bidirectional QuickBooks sync, headcount planning across states, multi-stage approvals, and AI summaries. Replaced spreadsheets across 20+ departments.',
     tags:['SAML SSO','QuickBooks','Portfolio Sync','Rippling','AI'],
     features:[
@@ -2154,7 +2154,7 @@ const PROJECTS=[
       {g:'AI Features',items:[{n:'AI Summary',d:'Cross-budget AI-generated insights'},{n:'AI Bill Parser',d:'Extract amounts from uploaded bills'},{n:'Contract AI',d:'AI-assisted contract analysis'}]},
       {g:'Approvals',items:[{n:'Multi-Level Workflow',d:'Manager → Director → CFO with email notifications'},{n:'Audit Trail',d:'Full history with status tracking'}]},
     ]},
-  {id:'insights',demo:'insights',domain:'insights.balentine.com',title:'Insights Dashboard',stripe:'linear-gradient(90deg,var(--blue-soft),var(--purple-soft))',
+  {id:'insights',demo:'insights',domain:'',title:'Insights Dashboard',stripe:'linear-gradient(90deg,var(--blue-soft),var(--purple-soft))',
     desc:'AI-powered meeting intelligence. A proactive pre-meeting agent that compiles a full customer briefing two weeks out, plus voice profiles ("Sound Like Me"), call-recording sync, and natural-language agent chat. Pulls across CRM, portfolio platform, transaction system, document storage, call recording, and Microsoft Graph.',
     tags:['Call Recording','AI','Microsoft Graph','GPT-4o','MCP'],
     features:[
@@ -2170,23 +2170,23 @@ const PROJECTS=[
       {g:'Meeting Intelligence',items:[{n:'Meeting History',d:'AI summaries across recordings'},{n:'Agent Chat',d:'Natural language meeting queries'},{n:'Recording Sync',d:'Automated call-recording sync'}]},
       {g:'Sound Like Me',items:[{n:'Voice Profile Generation',d:'Analyzes user\'s sent emails via Microsoft Graph to learn their personal writing style. tone, word choice, greetings, closings'},{n:'AI Rewriter',d:'Paste any text (email drafts, meeting notes, client summaries) and GPT-4o rewrites it matching your voice profile. preserving all facts'},{n:'One-Click Rewrite',d:'Cmd+Enter shortcut, side-by-side input/output panels, one-click copy to clipboard'},{n:'Session History',d:'Recent rewrites tracked in session. click any to reload and re-edit'}]},
     ]},
-  {id:'documents',demo:'docsportal',domain:'documents.balentine.com',title:'Documents Portal',stripe:'linear-gradient(90deg,var(--green-soft),var(--blue-soft))',
+  {id:'documents',demo:'docsportal',domain:'',title:'Documents Portal',stripe:'linear-gradient(90deg,var(--green-soft),var(--blue-soft))',
     desc:'Automated regulatory document distribution. Per-customer folders, secure sharing, and role-based access pulling from cloud document storage and source systems.',
     tags:['Box','Document Automation','Secure Delivery'],
     features:[{g:'From January Fire Drill to Hands-Off',items:[{n:'The process it replaced',d:'Tax season used to mean ops downloading tax documents client-by-client from the custodian, organizing them into folders, and emailing them one at a time. Multi-week effort every January. Clients waited days. Ops drowned in spreadsheets tracking who got what.'},{n:'Custodian feeds straight to client folders',d:'Custodian and portfolio-mgmt platforms feed documents into the document storage system. Each document files into the correct client-specific folder automatically.'},{n:'Tokenized secure share links',d:'Per-document access tokens generated on demand. Clients click a link to download. No email attachments.'},{n:'Role-based admin view',d:'Ops can see at a glance which clients have docs, what\'s been delivered, who hasn\'t logged in. No more spreadsheet tracking.'},{n:'Business impact',d:'Tax season no longer requires a war room. Ops time saved measured in weeks per year. Clients get documents faster, security posture improved at the same time.'},{n:'Platform leverage',d:'Same custodian integrations powering the client portal, the document vault, and the pre-meeting briefing agent.'},]},{g:'Document Management',items:[{n:'Cloud Storage Integration',d:'Upload, download, share via Box API'},{n:'Automated Distribution',d:'Customer-specific folders, scheduled delivery'},{n:'Secure Sharing',d:'Token-based access controls'},{n:'Admin Controls',d:'Per-folder permission management'}]}]},
-  {id:'clients',domain:'clients.balentine.com',title:'Customer Portal',stripe:'linear-gradient(90deg,var(--accent),var(--red-soft))',
+  {id:'clients',domain:'',title:'Customer Portal',stripe:'linear-gradient(90deg,var(--accent),var(--red-soft))',
     desc:'Customer-facing portal with account summaries, performance data, and document access pulling from upstream systems of record.',
     tags:['API Aggregation','Customer-Facing','Self-Service'],
     features:[{g:'Replacing the Phone-Call-for-a-Balance',items:[{n:'The process it replaced',d:'Clients used to call their advisor or admin to get a balance, see portfolio performance, check beneficiaries, or pull a tax statement. Each call cost minutes of advisor time. Power-users could log into the portfolio-mgmt platform or the custodian client portal directly to see live account data, beneficiaries, and who their advisor and team are, but those UIs are intimidating, two separate logins, and few clients used them without help.'},{n:'One log-in, everything in one place',d:'Federated identity via the SSO provider. Clients log in once and see their accounts, holdings, performance, beneficiaries, who their advisor and full service team are, AND their documents. No more bouncing between custodian portals.'},{n:'Live data from custodian and portfolio mgmt',d:'Accounts, balances, holdings, and performance pulled live from the portfolio-mgmt and custodian platforms. No nightly batch lag, the number on the screen matches the custodian.'},{n:'Beneficiaries + service team visibility',d:'Beneficiaries on file shown clearly per account. Each household sees their named advisor, relationship manager, and operations contact with photos and direct contact info, the team they actually work with.'},{n:'Document access in the same portal',d:'Tax docs, statements, and any custodian-issued documents land in the same portal. The Documents Portal feeds in automatically, clients do not need to know it is a separate system.'},{n:'Built for the relationship, not just the data',d:'Designed alongside advisors so it shows what clients actually ask about, in the order they ask.'},{n:'Business impact',d:'Reduced inbound "what is my balance" calls dramatically. Eliminated the two-portal logins that most clients never bothered with. Advisors freed up for high-value conversations.'},{n:'Platform leverage',d:'Same data layer as the document portal, onboarding, and pre-meeting briefings. Adding new data points means surfacing them once in the shared layer and they appear here automatically.'},]},{g:'Features',items:[{n:'Account Summary',d:'Dashboard of all customer accounts'},{n:'Performance Trends',d:'Metrics and historical trends'},{n:'Document Access',d:'Self-service regulatory and statement downloads'}]}]},
-  {id:'onboarding',domain:'onboarding.balentine.com',title:'Onboarding Portal',stripe:'linear-gradient(90deg,var(--purple-soft),var(--accent))',
+  {id:'onboarding',domain:'',title:'Onboarding Portal',stripe:'linear-gradient(90deg,var(--purple-soft),var(--accent))',
     desc:'Multi-step customer onboarding. dynamic questionnaires, document collection, email-verified submission with handoff to downstream systems.',
     tags:['Onboarding','Forms','Verification'],
     features:[{g:'From Paper-and-PDF to Days-Not-Weeks',items:[{n:'The process it replaced',d:'New client onboarding was a paper trail. Forms emailed. PDFs signed. Documents scanned. Manually re-entered into the CRM by ops. A typical onboarding took weeks of back-and-forth before the client relationship was officially active.'},{n:'CRM pre-populates the form',d:'What the firm already knows about the client auto-fills the questionnaire. Client only fills in what\'s actually missing.'},{n:'Dynamic, sectioned questionnaire',d:'Family, Assets, Liabilities, Income, Insurance, Goals, each as its own section with progress indicators. Saveable as you go.'},{n:'Direct document upload',d:'Driver\'s license, statements, void check uploaded straight into the document storage system, filed into the right client folder, linked to the CRM record. No print-scan-email loop.'},{n:'Email verification',d:'One-time link confirmation. Reduces fraud and impersonation risk.'},{n:'Round-trip back to CRM',d:'Completed data flows back into the right CRM objects. No re-entry.'},{n:'Business impact',d:'New client onboarding shrunk from weeks to days. Ops eliminated re-entry and reconciliation.'},{n:'Platform leverage',d:'Reuses the same document ingestion, CRM object model, and SSO that the client portal and document portal run on.'},]},{g:'Flow',items:[{n:'Dynamic Questionnaire',d:'Multi-section forms with conditional branching'},{n:'Document Collection',d:'ID, statements, supporting docs'},{n:'Progress Tracking',d:'Visual indicators across sections'}]}]},
-  {id:'valuecards',demo:'valuecards',domain:'valuecards.balentine.com',title:'Value Cards',stripe:'linear-gradient(90deg,var(--green-soft),var(--accent))',
+  {id:'valuecards',demo:'valuecards',domain:'',title:'Value Cards',stripe:'linear-gradient(90deg,var(--green-soft),var(--accent))',
     desc:'Interactive values assessment. swipe UI, animations, group comparison, audio feedback. Used in advisory sessions and team workshops.',
     tags:['Framer Motion','Howler.js','Advisory'],
     features:[{g:'Generational Conversations, At Scale',items:[{n:'The process it replaced',d:'Paper card decks. Effective in a one-on-one room, but hard to facilitate at scale. No way to compare results across spouses or across generations. Manual tallies. Card decks got lost. Not usable remotely.'},{n:'Three-round structure',d:'50+ value cards round one, refine to top values round two, narrow to 6 core values round three.'},{n:'Swipe + grid dual interaction',d:'Touch-friendly swipe mode for mobile/tablet, grid mode for desktop. Animated, audio feedback, designed to feel like a game rather than a survey.'},{n:'Group comparison',d:'Multiple players in the same session. Side-by-side comparison view shows where participants agree and where they diverge.'},{n:'Session analytics',d:'Word cloud of chosen values, distribution stats, comparison snapshots. Generated on the fly so the facilitator has talking points the moment the session ends.'},{n:'Business impact',d:'Used in advisory sessions, workshops, and prospect meetings. Sparks conversations the paper version never could. A real differentiator.'},]},{g:'Game',items:[{n:'Three Rounds',d:'50+ cards → refine → 6 core values'},{n:'Swipe + Grid',d:'Dual interaction modes with animations'},{n:'Audio System',d:'11 effects via Howler.js'},{n:'Session Analytics',d:'Word cloud, stats, group comparison'}]}]},
-  {id:'projects',demo:'receipts',domain:'projects.balentine.com',title:'Projects Hub',stripe:'linear-gradient(90deg,var(--blue-soft),var(--green-soft))',
+  {id:'projects',demo:'receipts',domain:'',title:'Projects Hub',stripe:'linear-gradient(90deg,var(--blue-soft),var(--green-soft))',
     desc:'Central hub. project management, OOO with Slack sync, vendor tracking, change management, calendar/distribution list admin, data architecture mapping.',
     tags:['React Flow','Microsoft Graph','Admin'],
     features:[
@@ -2202,7 +2202,7 @@ const PROJECTS=[
     desc:'Both custodians fully integrated into the firm\'s data layer. Legacy custodian via cert-auth APIs; new custodian via cert-auth API + custom file-transfer ingestion server (cloud-VPS file watcher, 14 relational tables, 18 daily jobs). Statements, tax docs, RMDs, standing instructions, beneficiaries, retirement accounts, all surfaced inside the CRM on the household record.',
     tags:['Multi-Custodian','Cert Auth','File Transfer','CRM Surface'],
     features:[{g:'Custodian Data Without Leaving the CRM',items:[{n:'The process it replaced',d:'Looking up a single client\'s standing instructions, RMD status, or beneficiary on file used to mean logging into a custodian web UI, navigating through tabs, and digging. Two custodians, two logins, two UIs. Context switching killed velocity.'},{n:'Legacy custodian, cert-auth API ingestion',d:'Certificate-authenticated APIs feed statements, tax docs, RMDs, standing instructions, and retirement-account specifics into our own data layer. Intraday refresh, the data matches the custodian in near-real-time.'},{n:'New custodian, cert-auth API + custom file-transfer ingestion',d:'Cert-auth API for live data, plus a custom file-transfer ingestion server with a watcher process, intake schema, 14 relational tables, and 18 daily jobs. Different vendor, same CRM surface.'},{n:'Surfaced inside the CRM on the same record',d:'Custodian-integrated components on the household record show data from whichever custodian holds that account. Ops doesn\'t need to know or care which custodian, the UI is the same.'},{n:'Built for the conversion',d:'Designed so both custodians coexist for the duration of the multi-year migration. As accounts move to the new custodian, they appear in the same UI seamlessly, no retraining required.'},{n:'Business impact',d:'Ops self-serve answers about either custodian\'s data. Per-question time cost dropped from minutes to seconds. Conversion timeline accelerated because the data layer doesn\'t depend on which custodian holds the account.'},{n:'Platform leverage',d:'Same ingestion pattern, two custodians. The pattern itself is the asset, adding a third (if ever needed) is a known path, not a new project.'},]},{g:'Document Pipelines',items:[{n:'Statements',d:'Monthly financial statements from both custodians'},{n:'Tax Docs',d:'Tax forms from both custodians'},{n:'Standing Instructions',d:'Account instruction management surfaced from each custodian\'s API'},{n:'Retirement',d:'Retirement-specific API integration (RMDs, contributions, beneficiaries)'},{n:'File watcher',d:'Cloud-VPS watcher process that ingests scheduled file drops; 18 daily jobs land them into the right relational tables'}]}]},
-  {id:'dailyemail',demo:'voice',domain:'projects.balentine.com',title:'Daily Email Summary',stripe:'linear-gradient(90deg,var(--blue-soft),var(--green-soft))',
+  {id:'dailyemail',demo:'voice',domain:'',title:'Daily Email Summary',stripe:'linear-gradient(90deg,var(--blue-soft),var(--green-soft))',
     desc:'Automated portfolio briefing system. scans advisor mailboxes via Microsoft Graph, matches senders to clients using Salesforce-synced contact data, generates AI summaries via GPT-4o-mini, and delivers branded HTML digest emails on a configurable schedule.',
     tags:['Microsoft Graph','OpenAI','PostgreSQL','Node-cron','Salesforce Sync'],
     features:[
@@ -2323,7 +2323,8 @@ const INTS=[
   {n:'OpenAI / Google AI / Anthropic',d:'Summaries, analysis, meeting prep, parsing, agentic workflows'},
   {n:'Twilio',d:'SMS notifications and alerts'},
   {n:'DocuSign',d:'E-signature workflows and audit-trail ingestion'},
-  {n:'Fidelity',d:'Vendor platform sync via cert-authenticated API + custom SFTP ingestion'},
+  {n:'Fidelity',d:'SSO federated. statements, holdings, transactions, RMDs (cert-auth API + custom SFTP)'},
+  {n:'Schwab',d:'Statements, holdings, transactions, RMD data'},
   {n:'Huntress',d:'Managed EDR alerts and threat detection feeds'},
   {n:'SentinelOne',d:'Endpoint protection telemetry and incident events'},
   {n:'Cisco Meraki',d:'Network infrastructure, traffic, and device health'},
@@ -7139,6 +7140,8 @@ body.bk-1up .bk-folio--r{display:none}
   filter:drop-shadow(0 1px 0 rgba(0,0,0,0.55))}
 .bk-cover-sub{font-family:'Hanken Grotesk',sans-serif;font-size:0.98rem;color:rgba(245,239,220,0.82);max-width:460px;line-height:1.65}
 .bk-cover-by{font-family:'Hanken Grotesk',sans-serif;font-size:1.12rem;font-weight:600;letter-spacing:0.02em;color:#F5EFDC}
+.bk-cover-subtitle{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:clamp(1.1rem,1.8vw,1.5rem);color:rgba(245,239,220,0.85);margin-top:-8px}
+.card-domain:empty{display:none}
 .bk-cover-title br{display:block}
 .bk-cover-rule{width:72px;height:2px;background:linear-gradient(90deg,#C77F00,#FFD34D,#C77F00)}
 .bk-cover-foot{position:absolute;bottom:40px;left:0;right:0;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:3px;text-transform:uppercase;color:rgba(245,239,220,0.55)}
@@ -7294,11 +7297,11 @@ body.bk-1up .bk-flow .logo-strip__stack{text-align:center;line-height:1.8;max-wi
 
   var CHAPTERS=[
     {t:'The Front Page',sub:'Who I am, what I build, and the numbers behind it.',sel:['.hero','.logo-strip']},
-    {t:'What I’m Doing Now',sub:'',sel:['#now']},
-    {t:'What I’ve Owned',sub:'End-to-end technology leadership.',sel:['#roles']},
+    {t:'In Between Chapters',sub:'',sel:['#now']},
+    {t:'The Full Stack of Responsibility',sub:'The foundational pillars of the organization&rsquo;s technology.',sel:['#roles']},
     {t:'Operations',sub:'Systems mastered and capabilities in production.',sel:['#ops','#skills']},
     {t:'Cybersecurity',sub:'The program behind zero SEC findings.',sel:['#cybersecurity']},
-    {t:'Applications I’ve Built',sub:'Production software on React, Express, and PostgreSQL.',sel:['#dev']},
+    {t:'Built, Not Bought',sub:'Production software on React, Express, and PostgreSQL.',sel:['#dev']},
     {t:'Salesforce',sub:'CRM dashboards, LWCs, and the culture around them.',sel:['#salesforce','#fun-stuff']},
     {t:'Connected Systems',sub:'The integration fabric across 23+ vendor platforms.',sel:['#integrations']},
     {t:'Architecture',sub:'The production stack, roadmap, and data movement.',sel:['#architecture','#innovation','#tech-roadmap','#data-architecture','#tax-document-automation']},
@@ -7327,7 +7330,8 @@ body.bk-1up .bk-flow .logo-strip__stack{text-align:center;line-height:1.8;max-wi
       var title=el('div','bk-chtitle'+(c===0?' bk-halftitle':''));
       if(c===0){
         title.appendChild(el('div','bk-chtitle__num','Volume One'));
-        title.appendChild(el('div','bk-chtitle__name','The Department of One'));
+        title.appendChild(el('div','bk-chtitle__name','Coder Leader'));
+        title.appendChild(el('div','bk-chtitle__sub','Terminal at the Table'));
         title.appendChild(el('div','bk-chtitle__rule'));
         title.appendChild(el('div','bk-halfby','By Dre Forbes'));
         title.appendChild(el('div','bk-colo','Technologist Virtuoso'));
@@ -7391,7 +7395,8 @@ body.bk-1up .bk-flow .logo-strip__stack{text-align:center;line-height:1.8;max-wi
     var cf=el('div','bk-cface bk-cface--front');
     cf.appendChild(el('div','bk-cover-inner',
       '<div class="bk-cover-kicker">Volume One</div>'+
-      '<div class="bk-cover-title">The Department<br>of One</div>'+
+      '<div class="bk-cover-title">Coder Leader</div>'+
+      '<div class="bk-cover-subtitle">Terminal at the Table</div>'+
       '<div class="bk-cover-rule"></div>'+
       '<div class="bk-cover-by">By Dre Forbes</div>'));
     cf.appendChild(el('div','bk-cover-hint','Scroll, tap, or swipe to open'));
@@ -7469,6 +7474,7 @@ body.bk-1up .bk-flow .logo-strip__stack{text-align:center;line-height:1.8;max-wi
 
     /* DESKTOP/TABLET: two-page multicol pagination */
     wraps.forEach(function(w,i){
+      w.style.display='block';
       w.style.overflowY='hidden';w.style.overflowX='hidden';w.style.webkitOverflowScrolling='';
       w.style.left=padX+'px';w.style.top=padTop+'px';w.style.width=W+'px';w.style.height=H+'px';
       var f=flows[i];
@@ -7499,7 +7505,11 @@ body.bk-1up .bk-flow .logo-strip__stack{text-align:center;line-height:1.8;max-wi
     cur=Math.max(0,Math.min(spread,total-1));
     if(oneUp){
       var c=cur;
-      wraps.forEach(function(w,i){w.style.visibility=i===c?'visible':'hidden'});
+      wraps.forEach(function(w,i){
+        var on=i===c;
+        w.style.visibility=on?'visible':'hidden';
+        w.style.display=on?'block':'none'; /* iOS keeps painting scrolled layers hidden only by visibility */
+      });
       wraps[c].scrollTop=0;
       sheet.querySelector('.bk-folio--l').textContent=String(c+1);
       sheet.querySelector('.bk-folio--r').textContent='';
@@ -7512,7 +7522,7 @@ body.bk-1up .bk-flow .logo-strip__stack{text-align:center;line-height:1.8;max-wi
       return;
     }
     var loc=locate(cur);
-    wraps.forEach(function(w,i){w.style.visibility=i===loc.c?'visible':'hidden'});
+    wraps.forEach(function(w,i){w.style.display='block';w.style.visibility=i===loc.c?'visible':'hidden'});
     wraps[loc.c].scrollLeft=loc.s*pagesPer*(colW+gutter);
     var pl=cumCols[loc.c]+loc.s*pagesPer+1,pr=pl+1;
     var chCols=cumCols[loc.c+1]-cumCols[loc.c];
